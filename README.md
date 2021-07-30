@@ -1,2 +1,14 @@
-# whmcs-chinese-lang
-latest chinese lang
+# WHMCS 中文语言包,WHMCS Chinese Lang Pack
+
+### Intro,介绍
+    WHMCS最新版本中文语言包 , WHMCS Latest Chinese Lang Pack
+
+### Version,版本
+    兼容至 **WHMCS 8.2.1** , Compatible  WHMCS 8.2.1
+
+### 使用, Using
+    上传至对应目录即可, (放 overrides 目录可覆盖源语言包)          
+    upload to whmcs_install_dir
+
+### 许可, License
+ - GPL v3
