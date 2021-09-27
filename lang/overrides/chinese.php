@@ -1,7 +1,7 @@
 <?php
 /**
  * WHMCS Language File
- * Chinese (zh)
+ * Chinese (zh_CN)
  *
  * Please Note: These language files are overwritten during software updates
  * and therefore editing of these files directly is not advised. Instead we
@@ -708,7 +708,6 @@ $_LANG['serverchangepasswordsuccessful'] = "修改密码成功！";
 $_LANG['serverchangepasswordupdate'] = "更新";
 $_LANG['serverhostname'] = "主机名";
 $_LANG['serverlogindetails'] = "登录详情";
-$_LANG['servername'] = "服务器";
 $_LANG['serverns1prefix'] = "NS1 前缀";
 $_LANG['serverns2prefix'] = "NS2 前缀";
 $_LANG['serverpassword'] = "密码";
@@ -726,13 +725,10 @@ $_LANG['serverusername'] = "用户名";
 $_LANG['show'] = "显示";
 $_LANG['ssladmininfo'] = "管理员联系信息";
 $_LANG['ssladmininfodetails'] = "以下联络资料将不会显示在证书上 - 它仅于本订单联系您。此 SSL 证书和未来更新提醒我们将发送到以下指定的电子邮件地址。";
-$_LANG['sslcertapproveremail'] = "证书审批邮件";
-$_LANG['sslcertapproveremaildetails'] = "您必须从下面的选项选择您希望发送到证书审批的邮箱地址。";
 $_LANG['sslcertinfo'] = "SSL 证书详情";
 $_LANG['pleasechooseone'] = "请选择一个…";
 $_LANG['sslcerttype'] = "证书类型";
 $_LANG['sslconfigcomplete'] = "配置完成";
-$_LANG['sslconfigcompletedetails'] = "您的 SSL 证书的配置已经完成并送交认证机构进行验证。您应该会收到一封电子邮件，他们很快予以批准。";
 $_LANG['sslconfsslcertificate'] = "配置 SSL 证书";
 $_LANG['sslcsr'] = "CSR";
 $_LANG['sslerrorapproveremail'] = "您必须选择一个审批的电子邮件地址";
@@ -743,6 +739,7 @@ $_LANG['sslorderdate'] = "订购日期";
 $_LANG['sslserverinfo'] = "服务器信息";
 $_LANG['sslserverinfodetails'] = "您必须拥有一个有效的“CSR”（证书签发请求）去配置您的 SSL 证书。CSR 是一段由要安装 SSL 证书的 Web 服务器生成的加密文本。如果您还没有 CSR，您必须创建一个或者让您的虚拟主机提供商给您创建一个。";
 $_LANG['sslservertype'] = "Web 服务器类型";
+$_LANG['ssl']['selectWebserver'] = "选择类型 :serverType";
 $_LANG['sslstatus'] = "配置状态";
 $_LANG['sslawaitingconfig'] = "待配置";
 $_LANG['sslconfigure'] = "配置";
@@ -878,12 +875,10 @@ $_LANG['pwresetvalidationsuccess'] = "重置密码成功";
 
 $_LANG['overagescharges'] = "超限费用";
 $_LANG['overagestotaldiskusage'] = "总硬盘使用量";
-$_LANG['overagestotalbwusage'] = "总带宽使用量";
+$_LANG['overagestotalbwusage'] = "总流量使用量";
 
 $_LANG['affiliatescommissionspending'] = "确认中的佣金金额";
 $_LANG['affiliatescommissionsavailable'] = "有效的佣金金额";
-$_LANG['affiliatessignups'] = "注册数";
-$_LANG['affiliatesconversionrate'] = "转化率";
 
 $_LANG['configoptionqtyminmax'] = "%s 要求最小不能低于 %s 和最大不能超过 %s";
 
@@ -994,8 +989,6 @@ $_LANG['orderformtitle'] = "订购表单";
 
 $_LANG['signup'] = "注册";
 $_LANG['loading'] = "正在加载…";
-
-$_LANG['ordersummarybegin'] = "请选择产品然后开始订购";
 
 $_LANG['cartchooseproduct'] = "选择产品";
 $_LANG['cartconfigurationoptions'] = "配置设置";
@@ -1116,7 +1109,6 @@ $_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br />（该
 # Version 4.5.2
 
 $_LANG['ajaxcartcheckout'] = "直接跳转至结账 &raquo;";
-$_LANG['ordersummarybegin'] = "购物车是空的<br/>请选择要开始订购产品或域名…";
 $_LANG['ajaxcartconfigreqnotice'] = "请绑定域名，更多的域名绑定可在控制面板操作！如果您没有域名，请注册一个新域名";
 
 # Version 5.0.0
@@ -1261,13 +1253,11 @@ $_LANG['clientareahomeloginbtn'] = "登录用户中心";
 $_LANG['clientareaproductsintro'] = "您账户下的产品列表";
 $_LANG['clientareaproductdetailsintro'] = "下面是您的产品/服务概览";
 $_LANG['clientareadomainsintro'] = "您账户下的域名列表";
-$_LANG['invoicesintro'] = "您可以查看所有的订单历史以及在此支付未付款账单";
 $_LANG['quotesintro'] = "此处为我们为您生成的所有报价单";
 $_LANG['emailstagline'] = "您可以查看我们发送给您的邮件备份存档";
 $_LANG['supportticketsintro'] = "您可以在这里提交、查看和回复您的工单";
 $_LANG['addfundsintro'] = "您可以预存资金至账户余额中";
 $_LANG['registerintro'] = "注册账户…";
-$_LANG['masspayintro'] = "通过选择付款方式，在一个简单的交易中支付下面列出的所有账单";
 $_LANG['networkstatusintro'] = "您可以查看服务器在线状态和网络维护公告";
 
 $_LANG['creditcardyourinfo'] = "账单信息";
@@ -1946,7 +1936,6 @@ $_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countyr";
 $_LANG['orderForm']['findNewDomain'] = "寻找您心仪的域名。在下面输入您的名字或关键词检查是否可用。";
 $_LANG['orderForm']['transferExistingDomain'] = "转移您的域名到我们这里并保存。";
 $_LANG['orderForm']['www'] = "www.";
-$_LANG['orderForm']['check'] = "检查";
 $_LANG['orderForm']['returnToClientArea'] = "返回用户中心";
 $_LANG['orderForm']['checkout'] = "结账";
 $_LANG['orderForm']['alreadyRegistered'] = "已经注册？";
@@ -2168,9 +2157,9 @@ $_LANG['domainContactUs'] = "联系我们";
 $_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
 $_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
 
-$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
-$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
-$_LANG['domainCheckerSalesGroup']['new'] = "New";
+$_LANG['domainCheckerSalesGroup']['sale'] = "热销";
+$_LANG['domainCheckerSalesGroup']['hot'] = "热卖";
+$_LANG['domainCheckerSalesGroup']['new'] = "新品";
 
 $_LANG['pricing']['browseExtByCategory'] = "按类别浏览扩展";
 $_LANG['pricing']['register'] = "新价格";
@@ -2251,12 +2240,33 @@ $_LANG['pricingCycleLong']['biennially'] = "2 年";
 $_LANG['pricingCycleLong']['triennially'] = "3 年";
 
 $_LANG['navManageSsl'] = "管理 SSL 证书";
+$_LANG['almostDone'] = "大部分已完成啦";
 
 $_LANG['invoicesPaymentPending'] = "待付款";
 
 $_LANG['ssl']['changeApproverEmail'] = "更改审批者邮件地址";
 $_LANG['ssl']['reissueCertificate'] = "重新签发证书";
 $_LANG['ssl']['retrieveCertificate'] = "检索证书";
+$_LANG['ssl']['selectValidation'] = "选择验证模式";
+$_LANG['ssl']['dnsMethod'] = "DNS验证";
+$_LANG['ssl']['emailMethod'] = "Email验证";
+$_LANG['ssl']['fileMethod'] = "HTTP 文件";
+$_LANG['ssl']['emailMethodDescription'] = "验证将由证书颁发机构进行,向下面选择的邮件地址发送一封包含进一步说明的验证电子邮件.";
+$_LANG['ssl']['dnsMethodDescription'] = "证书颁发机构将检查域名的DNS记录，查找具有唯一值的验证记录。请确保您有权管理域名的DNS解析设置以完成此设置.";
+$_LANG['ssl']['fileMethodDescription'] = "证书颁发机构将向请求域名的验证路径，请确认已按照要求上传验证文件且可被访问.";
+$_LANG['ssl']['selectEmail'] = "选择邮件地址";
+$_LANG['ssl']['nextSteps'] = "下一步";
+$_LANG['ssl']['emailSteps'] = "证书颁发机构将向所选电子邮件地址发送一封电子邮件。其中将包含验证域所有权所需的进一步说明。完成这些步骤后，将颁发证书。";
+$_LANG['ssl']['fileSteps'] = "证书颁发机构现在将开始向以下 URL 发出请求以验证响应是否提供了所提供的值。一旦检测到具有指定值的响应，将颁发证书 .";
+$_LANG['ssl']['dnsSteps'] = "证书颁发机构现在将开始查询域的 DNS 记录，以获取与以下信息匹配的记录。访问您域的 DNS 设置并创建记录。一旦发现该记录， 将颁发证书。";
+$_LANG['ssl']['url'] = "URL";
+$_LANG['ssl']['value'] = "变量";
+$_LANG['ssl']['type'] = "类型";
+$_LANG['ssl']['host'] = "主机";
+$_LANG['ssl']['dnsRecordInformation'] = "DNS记录信息";
+$_LANG['ssl']['fileInformation'] = "文件信息";
+$_LANG['ssl']['emailInformation'] = "邮件信息";
+$_LANG['ssl']['dcv'] = "域名所有权验证";
 
 $_LANG['upgradeCredit'] = "更新余额";
 $_LANG['upgradeCreditDescription'] = "基于 :daysRemaining 未用日期 :totalDays 总日期计算在当前账单周期。";
@@ -2356,7 +2366,6 @@ $_LANG['dateTime']['jan'] = "1 月";
 $_LANG['dateTime']['feb'] = "2 月";
 $_LANG['dateTime']['mar'] = "3 月";
 $_LANG['dateTime']['apr'] = "4 月";
-$_LANG['dateTime']['may'] = "5 月";
 $_LANG['dateTime']['jun'] = "6 月";
 $_LANG['dateTime']['jul'] = "7 月";
 $_LANG['dateTime']['aug'] = "8 月";
@@ -2364,6 +2373,7 @@ $_LANG['dateTime']['sep'] = "9 月";
 $_LANG['dateTime']['oct'] = "10 月";
 $_LANG['dateTime']['nov'] = "11 月";
 $_LANG['dateTime']['dec'] = "12 月";
+
 $_LANG['dateTime']['AM'] = "AM";
 $_LANG['dateTime']['PM'] = "PM";
 $_LANG['dateTime']['am'] = "am";
@@ -3076,7 +3086,6 @@ $_LANG['subscription']['failedpaymentscount'] = "付款失败计数";
 $_LANG['subscription']['errorFetchingDetails'] = "尝试获取订阅信息时发生错误。请联系支持。";
 
 $_LANG['navMarketConnectService']['sitelockvpn'] = "VPN";
-$_LANG['store']['sitelockvpn']['title'] = "SiteLock VPN";
 $_LANG['store']['sitelockvpn']['tagline'] = "Get unlimited access to an Internet free of privacy concerns, content restrictions or data caps.";
 $_LANG['store']['sitelockvpn']['manageService'] = "Manage your SiteLock VPN Service";
 $_LANG['store']['sitelockvpn']['cartShortDescription'] = "SiteLock VPN allows anonymous, encrypted browsing sessions over any network connection.";
@@ -3190,8 +3199,16 @@ $_LANG['store']['login'] = "登录";
 $_LANG['store']['addToExistingPackage'] = "将此添加到现有主机套餐中。";
 
 $_LANG['marketConnect']['sitelock']['manageSecurity'] = "管理您的安全";
+$_LANG['marketConnect']['sitelock']['ftpHost'] = "FTP Host";
+$_LANG['marketConnect']['sitelock']['ftpUsername'] = "FTP Username";
+$_LANG['marketConnect']['sitelock']['ftpPassword'] = "FTP Password";
+$_LANG['marketConnect']['sitelock']['ftpPath'] = "FTP Path";
+$_LANG['marketConnect']['sitelock']['updateFtp'] = "Update FTP Credentials";
+$_LANG['marketConnect']['sitelock']['manage'] = "Log in to SiteLock";
 $_LANG['marketConnect']['sitelockvpn']['manageVPN'] = "管理您的 VPN";
 $_LANG['marketConnect']['spamexperts']['manageEmail'] = "管理您的邮件";
+$_LANG['marketConnect']['sitelockvpn']['manage'] = "Log in to SiteLock VPN";
+$_LANG['marketConnect']['spamexperts']['manage'] = "Log in to SpamExperts";
 $_LANG['marketConnect']['weebly']['buildWebsite'] = "搭建您的网站";
 
 $_LANG['creditCardHolderName'] = "卡片持有者姓名";
@@ -3275,6 +3292,8 @@ $_LANG['twoFactor']['yubico']['friendlyName'] = "Yubico";
 $_LANG['twoFactor']['yubico']['description'] = "使用 YubiKey 硬件设备生成验证码。";
 
 $_LANG['orderForm']['selectCategory'] = "从侧栏菜单中选择一个目录";
+
+$_LANG['marketConnect']['ox']['manage'] = "Log in to OX App Suite";
 
 $_LANG['store']['sampleProduct'] = "这是一个示例产品";
 $_LANG['store']['emailServices']['tab']['overview'] = "概览";
@@ -4046,6 +4065,22 @@ $_LANG['store']['siteBuilder']['promo']['sidebar']['body'] = "使用 Site Builde
 
 $_LANG['cPanel']['wptk'] = "WordPress 工具包";
 
+$_LANG['wptk']['goToWebsite'] = "访问网站";
+$_LANG['wptk']['goToAdmin'] = "管理";
+$_LANG['wptk']['createNew'] = "新创建";
+$_LANG['wptk']['installationSuccess'] = "<strong>成功!</strong> <a href=\"\" target=\"_blank\" id=\"newWordPressLink\">访问</a> 您的 WordPress® 安装, 或者访问 <a href=\"\" target=\"_blank\" id=\"newWordPressAdminLink\">后台管理</a>.";
+$_LANG['wptk']['installWordPress'] = "安装 WordPress®";
+$_LANG['wptk']['installWordPressShort'] = "安装";
+
 $_LANG['api']['client']['countryError'] = "需要有效的国家/地区";
 
+$_LANG['plesk']['mail'] = "邮箱";
+$_LANG['plesk']['applications'] = "应用";
+$_LANG['plesk']['statistics'] = "统计";
+$_LANG['plesk']['users'] = "用户";
+$_LANG['plesk']['manageDomains'] = "管理域名";
+
+$_LANG['contactCreated'] = "联系人信息已创建!";
+$_LANG['contactUpdated'] = "联系人信息已更新!";
+$_LANG['contactDeleted'] = "联系人信息已删除!";
 ////////// End of english language file.  Do not place any translation strings below this line!
