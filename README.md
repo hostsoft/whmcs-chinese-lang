@@ -6,9 +6,9 @@
 ### Version,版本
     兼容至 **WHMCS 8.3.0** , Compatible  WHMCS 8.3.0 Beta
 
-### 使用, Using
+### Using,使用
     上传至对应目录即可, (放 overrides 目录可覆盖源语言包)          
     upload to whmcs_install_dir
 
-### 许可, License
+### License,许可
  - GPL v3
