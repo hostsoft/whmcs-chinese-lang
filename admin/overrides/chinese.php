@@ -212,6 +212,7 @@ $_ADMINLANG['global']['seeGatewayLog'] = "查看网关日志";
 $_ADMINLANG['global']['emptied'] = "Emptied";
 $_ADMINLANG['global']['deleteConfirmation'] = "您确认删除 :itemToDelete?";
 $_ADMINLANG['global']['method'] = "模式";
+$_ADMINLANG['global']['navigation'] = "栏目";
 
 # Errors
 $_ADMINLANG['error']['connection'] = "连接错误";
@@ -983,6 +984,12 @@ $_ADMINLANG['orders']['errors']['requiredDomainFieldsMsg'] = "一个或多个必
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsAction'] = "如果您希望忽略该警告继续订购，请单击“提交订单”按钮。";
 $_ADMINLANG['orders']['placedBy'] = "订单下单由";
 $_ADMINLANG['orders']['addonFeature'] = "附加功能";
+$_ADMINLANG['orders']['optionsUpgrade'] = "可选升级";
+$_ADMINLANG['orders']['addonUpgrade'] = "插件升级";
+$_ADMINLANG['orders']['addonFeature'] = "插件功能";
+$_ADMINLANG['orders']['invalidAffiliate'] = "无效Affiliate";
+$_ADMINLANG['orders']['selfReferral'] = "自推荐无效.";
+$_ADMINLANG['orders']['referralSuccess'] = "Affiliate已成功分配";
 
 
 # Billing Cycles
@@ -1134,6 +1141,9 @@ $_ADMINLANG['invoices']['transactionsHistory'] = "交易历史";
 $_ADMINLANG['invoices']['transactionsHistoryTooltip'] = "查看支付接口日志条目。";
 $_ADMINLANG['invoices']['cancelPayment'] = "取消付款";
 $_ADMINLANG['invoices']['deleteConfirm'] = "您要如何处理？";
+$_ADMINLANG['invoices']['massTransactionMissingInvoice'] = "无法找到以下订单ID,且未能设置付款: :invoiceIds.";
+$_ADMINLANG['invoices']['invalidInvoiceIDs'] = "订单ID未找到: :invoiceIds";
+$_ADMINLANG['invoices']['addNewItem'] = "添加新的计费项目.";
 
 # Billable Items
 $_ADMINLANG['billableitems']['title'] = "收费项目";
@@ -1490,6 +1500,9 @@ $_ADMINLANG['support']['requestor']['authorizeduser'] = "认证用";
 $_ADMINLANG['support']['requestor']['registereduser'] = "已注册用户";
 $_ADMINLANG['support']['requestor']['subaccount'] = "子账户";
 $_ADMINLANG['support']['requestor']['guest'] = "访客";
+$_ADMINLANG['support']['unimportedReplies'] = "未能导入的回复";
+$_ADMINLANG['support']['ticketCreationFailed'] = "创建工单失败: :error";
+$_ADMINLANG['support']['errorUnableToCreateTicketNumber'] = "系统未能生成工单号码,因为已超最大重试次数.";
 
 # Network Issues
 $_ADMINLANG['networkissues']['title'] = "网络维护";
@@ -1762,6 +1775,12 @@ $_ADMINLANG['utilities']['automationStatusDetail']['viewing'] = "查看";
 $_ADMINLANG['utilities']['automationStatusDetail']['successCount'] = "成功计数";
 $_ADMINLANG['utilities']['automationStatusDetail']['count'] = "计数";
 $_ADMINLANG['utilities']['automationStatusDetail']['never'] = "从未";
+$_ADMINLANG['utilities']['automationStatusDetail']['dailyActions'] = "每日操作";
+$_ADMINLANG['utilities']['automationStatusDetail']['lastRun'] = "上次运行:";
+$_ADMINLANG['utilities']['automationStatusDetail']['viewing'] = "正在查看";
+$_ADMINLANG['utilities']['automationStatusDetail']['successCount'] = "成功次数";
+$_ADMINLANG['utilities']['automationStatusDetail']['count'] = "总计";
+$_ADMINLANG['utilities']['automationStatusDetail']['never'] = "永不";
 $_ADMINLANG['utilities']['automationStatusDetail']['na'] = "N/A";
 $_ADMINLANG['utilities']['automationStatusDetail']['lastCronInvocation'] = "上次 Cron 调用";
 $_ADMINLANG['utilities']['automationStatusDetail']['nextDailyTaskRun'] = "下次每日任务执行";
@@ -3118,7 +3137,6 @@ $_ADMINLANG['system']['ticketimportblockloop'] = "被阻止潜在的邮件循环
 $_ADMINLANG['system']['ticketimportdeptnotfound'] = "未找到部门";
 $_ADMINLANG['system']['ticketimporttidnotfound'] = "未找到订单编号";
 $_ADMINLANG['system']['ticketimportunregistered'] = "未注册的邮件地址";
-$_ADMINLANG['system']['ticketimportexceededlimit'] = "在 15 分钟内超出 10 张工单的限制";
 $_ADMINLANG['system']['ticketimportunregisteredopen'] = "禁止未注册用户开启工单";
 $_ADMINLANG['system']['ticketimportrepliesonly'] = "只允许通过邮件答复";
 $_ADMINLANG['system']['ignoreimport'] = "忽略错误并导入";
@@ -3742,6 +3760,10 @@ $_ADMINLANG['general']['errorreportinglevel_inherit'] = '从运行时继承';
 $_ADMINLANG['general']['enablesafeinclude'] = "编码文件加载";
 $_ADMINLANG['general']['enablesafeincludeyes'] = "不要加载未知 PHP 目标的 ionCube 编码文件";
 $_ADMINLANG['general']['enablesafeincludeno'] = "尝试加载所有文件";
+$_ADMINLANG['general']['eventHandlingMode'] = "事件处理";
+$_ADMINLANG['general']['eventHandlingModeAsync'] = "并发 (Launch an asynchronous request.)";
+$_ADMINLANG['general']['eventHandlingModeInline'] = "内联 (Handle events within the same request.)";
+$_ADMINLANG['general']['eventHandlingModeCron'] = "定时任务 (Defer events until the next cron run.)";
 $_ADMINLANG['general']['displayerrors'] = "显示错误";
 $_ADMINLANG['general']['displayerrorsinfo'] = "选中复选框，启用显示 PHP 错误（不推荐在生产环境中使用）";
 $_ADMINLANG['general']['logerrors'] = "记录错误";
@@ -3827,6 +3849,10 @@ $_ADMINLANG['general']['orderformIncompatWarning'] = "分配的不兼容订购�
 $_ADMINLANG['general']['moreDetails'] = "更多细节";
 $_ADMINLANG['general']['orderformIncompatAssigned'] = "以下订购页面不兼容，但当前已分配。";
 $_ADMINLANG['general']['orderformChangingTo'] = "保存本主题将会分配“:name”订购页面。";
+$_ADMINLANG['general']['supportAllowInsecureImport'] = "允许不安全的导入";
+$_ADMINLANG['general']['supportAllowInsecureImportDescription'] = "选中以允许导入未注册发件人、未添加为 CC 收件人或未与客户端关联的现有工单.";
+$_ADMINLANG['general']['supportReopenTicketOnFailedImport'] = "如果导入失败，重新打开现有工单";
+$_ADMINLANG['general']['supportReopenTicketOnFailedImportDescription'] = "检查以允许在收到未导入的回复时重新打开现有工单。工单中将提供通知.";
 
 
 # Config Tax
@@ -4044,7 +4070,6 @@ $_ADMINLANG['sendmessage']['marketingemaildesc'] = "请记住使用 %s 包含营
 $_ADMINLANG['sendmessage']['loadMessage'] = "载入消息";
 $_ADMINLANG['sendmessage']['noSaveNameEntered'] = "您必须输入一个名称才能保存信息并作为邮件模板";
 $_ADMINLANG['sendmessage']['uniqueSaveNameRequired'] = "邮件模板的保存必须是唯一的";
-$_ADMINLANG['sendmessage']['bcc'] = "密送";
 $_ADMINLANG['sendmessage']['noFilter'] = "无筛选";
 $_ADMINLANG['sendmessage']['checkedOnly'] = "仅选择的";
 $_ADMINLANG['sendmessage']['uncheckedOnly'] = "仅未选择的";
@@ -4358,6 +4383,9 @@ $_ADMINLANG['configservers']['disableddesc'] = "所选服务器已成功停用";
 $_ADMINLANG['configservers']['defaultchange'] = "默认服务器已更改！";
 $_ADMINLANG['configservers']['defaultchangedesc'] = "所选的服务器已设置为默认服务器";
 $_ADMINLANG['configservers']['defaultsignups'] = "默认为新注册用户激活此服务器";
+$_ADMINLANG['configservers']['accounts'] = "账户";
+$_ADMINLANG['configservers']['domains'] = "域名";
+$_ADMINLANG['configservers']['services'] = "产品&服务";
 
 $_ADMINLANG['configservers']['testconnection'] = "测试连接";
 $_ADMINLANG['configservers']['testconnectionloading'] = "尝试连接到服务器…";
@@ -4496,6 +4524,12 @@ $_ADMINLANG['healthCheck']['permissionCheckSuccess'] = "您的配置文件的权
 $_ADMINLANG['healthCheck']['permissionCheckConfigFileWritable'] = "您的配置文件为可写。这可能会造成安全隐患。我们建议您设置权限为只读。";
 $_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories'] = "如下目录所有者设置了和执行 WHMCS 不同的用户。 这是一个潜在的不安全配置：";
 $_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories2'] = "您可以查看我们的 <a :href>文档</a> 了解更多信息。";
+$_ADMINLANG['healthCheck']['configFileVariableValue'] = "检查配置文件 ':var' 变量是否正确.";
+$_ADMINLANG['healthCheck']['configFileMissingDirectory'] = "配置 :desc 目录 ':path' 不存在. 恢复或更新配置文件.";
+$_ADMINLANG['healthCheck']['customPathsHeadingConfiguration'] = "自定义目录";
+$_ADMINLANG['healthCheck']['customPathsTitleMismatch'] = "缺少路径或配置错误";
+$_ADMINLANG['healthCheck']['customPathsTitleNoWrite'] = "路径没有写权限";
+$_ADMINLANG['healthCheck']['customPathsChecksClean'] = "所有本地应用程序存储路径均已正确配置并可访问.";
 $_ADMINLANG['healthCheck']['customTemplates'] = "不应使用默认模板";
 $_ADMINLANG['healthCheck']['customTemplatesSuccess'] = "您的 WHMCS 正使用自定义模板，将不会在升级时覆盖。";
 $_ADMINLANG['healthCheck']['customTemplatesFailure'] = "我们检测到您的 WHMCS 当前正在使用一个或更多的默认的模板名，如果您对模板做了修改，我们强烈建议您新建一个自定义的模板目录以免下次升级导致定制丢失。<br /><br />您当前在以下位置正使用默认模板：";
@@ -6073,6 +6107,8 @@ $_ADMINLANG['disputes']['evidence']['label']['carrierName'] = "运营商名称";
 $_ADMINLANG['disputes']['evidence']['label']['trackingNumber'] = "号码跟着";
 $_ADMINLANG['disputes']['evidence']['label']['notes'] = "备注";
 $_ADMINLANG['disputes']['evidence']['label']['documents'] = "文件";
+$_ADMINLANG['disputes']['unableToSubmit'] = "Submission Failed.<br>You must add evidence before submitting the dispute.";
+$_ADMINLANG['disputes']['noSupportedGateways'] = "You have not configured any gateways that support the Disputes feature. :learnMore";
 
 $_ADMINLANG['wptk']['createCustomField'] = "创建自定义字段";
 $_ADMINLANG['wptk']['visitHomepage'] = "访问主页";
@@ -6085,3 +6121,27 @@ $_ADMINLANG['wptk']['disallowClientInstall'] = "不允许客户安装";
 $_ADMINLANG['wptk']['allowClientInstall'] = "允许客户安装";
 $_ADMINLANG['wptk']['disallowAutomaticInstall'] = "关闭自动安装";
 $_ADMINLANG['wptk']['allowAutomaticInstall'] = "允许自动安装";
+
+$_ADMINLANG['mailImport']['status']['successfulNew'] = "新工单导入成功.";
+$_ADMINLANG['mailImport']['status']['successfulReply'] = "回复工单导入成功.";
+$_ADMINLANG['mailImport']['status']['failedTicketImport'] = "未能导入工单";
+$_ADMINLANG['mailImport']['status']['blockedEmailLoop'] = "系统封禁的邮件地址无法导入.";
+$_ADMINLANG['mailImport']['status']['deptNotFound'] = "部门ID未找到.";
+$_ADMINLANG['mailImport']['status']['ticketNotFound'] = "工单ID未找到.";
+$_ADMINLANG['mailImport']['status']['unregisteredEmailAddress'] = "发件人的电子邮件地址未注册.";
+$_ADMINLANG['mailImport']['status']['senderNotAuthorized'] = "发件人无权处理该工单.";
+$_ADMINLANG['mailImport']['status']['rateLimited'] = "发件人在 15 分钟内超出了 :number 工单数量的限制。";
+$_ADMINLANG['mailImport']['status']['unregisteredUser'] = "系统阻止了来自未注册用户的工单打开.";
+$_ADMINLANG['mailImport']['status']['autoResponder'] = "系统阻止自动回复打开工单.";
+$_ADMINLANG['mailImport']['status']['reopenViaEmail'] = "系统阻止了通过电子邮件重新打开的工单.";
+$_ADMINLANG['mailImport']['status']['missingSender'] = "由于缺少发件人数据，系统没有导入邮件.";
+$_ADMINLANG['mailImport']['status']['abortedByHook'] = "由于钩子，系统没有导入邮件.";
+$_ADMINLANG['mailImport']['status']['spamPhrase'] = "系统没有导入邮件，因为它包含一个被阻止的关键词.";
+$_ADMINLANG['mailImport']['status']['spamSubject'] = "系统没有导入邮件，因为它包含一个被阻止的关键词.";
+$_ADMINLANG['mailImport']['status']['spamSender'] = "系统没有导入邮件，因为它包含一个被阻止的发件人.";
+$_ADMINLANG['mailImport']['status']['iterationLimit'] = "超限,系统未能生成工单号码.";
+$_ADMINLANG['mailImport']['status']['rejectedByOperator'] = "系统没有导入电子邮件，因为员工拒绝.";
+
+$_ADMINLANG['healthCheck']['asyncJobs']['title'] = "事件处理";
+$_ADMINLANG['healthCheck']['asyncJobs']['success'] = "事件处理功能正常";
+$_ADMINLANG['healthCheck']['asyncJobs']['staleJobs'] = "一个或多个事件处理尚未执行, 这可能是由于环境不兼容而发生的。尝试将处理方式 \"Event Handling\" 设置为 \"Inline\" 或 \"Cron\".";

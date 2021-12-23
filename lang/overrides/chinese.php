@@ -60,6 +60,7 @@ $_LANG['affiliatesstatus'] = "状态";
 $_LANG['affiliatestitle'] = "用户推广";
 $_LANG['affiliatesvisitorsreferred'] = "推荐的访问者数量";
 $_LANG['affiliateswithdrawalrequestsuccessful'] = "您的提现请求已经提交，我们会很快联系您。";
+$_LANG['affiliatesWithdrawalRequestUnsuccessful'] = "您的提现请求未成功, 请稍后在重试.";
 $_LANG['affiliateswithdrawn'] = "已提现的佣金总额";
 $_LANG['all'] = "共";
 $_LANG['alreadyregistered'] = "已经注册？";
@@ -3793,7 +3794,8 @@ $_LANG['ox']['deleteAccount'] = "Delete account <span class=\"email\"></span>?";
 $_LANG['ox']['manageAccount'] = "Manage account <span class=\"email\"></span>";
 $_LANG['ox']['setPasswordFor'] = "Set Password for <span class=\"email\"></span>";
 $_LANG['ox']['deleteAccountQuestion'] = "Are you sure you wish to delete this account?";
-$_LANG['ox']['settings']['retrieval'] = "Email Client Settings";
+$_LANG['ox']['deleteAccountWithAliasesQuestion'] = "Are you sure you want to delete this account and any aliases?";
+$_LANG['ox']['settings']['retrieval'] = "Email Client Settings";$_LANG['ox']['settings']['retrievalIntro'] = "To configure your email account within an email application, use the information below.";
 $_LANG['ox']['settings']['retrievalIntro'] = "To configure your email account within an email application, use the information below.";
 $_LANG['ox']['settings']['usageInstructions'] = "Usage Instructions";
 $_LANG['ox']['settings']['username'] = "Username";
@@ -3823,6 +3825,13 @@ $_LANG['ox']['accountDeleted'] = "Account deleted successfully.";
 $_LANG['ox']['accountCreated'] = "Account created successfully.";
 $_LANG['ox']['accountModified'] = "Account modified successfully.";
 $_LANG['ox']['passwordChanged'] = "Account password changed successfully.";
+$_LANG['ox']['alias']['intro'] = "Email aliases act as additional email addresses from which you can send and receive mail.";
+$_LANG['ox']['alias']['emailAliases'] = "Email Aliases";
+$_LANG['ox']['alias']['deleteTitle'] = "Delete alias <span class=\"alias\"></span>@:domain?";
+$_LANG['ox']['alias']['deleteQuestion'] = "Are you sure you want to delete this alias?";
+$_LANG['ox']['alias']['deleteSuccess'] = "Alias deleted successfully.";
+$_LANG['ox']['alias']['createButton'] = "Create";
+$_LANG['ox']['alias']['createSuccess'] = "Alias created successfully.";
 
 $_LANG['orderForm']['upgradeQuantityCannotBeLowerThanMinimum'] = "服务数量不能更改为低于最小值 (:minimum)。";
 $_LANG['orderForm']['upgradeQuantityMustChange'] = "您必须选择升级计划或更改数量。";
@@ -4083,4 +4092,26 @@ $_LANG['plesk']['manageDomains'] = "管理域名";
 $_LANG['contactCreated'] = "联系人信息已创建!";
 $_LANG['contactUpdated'] = "联系人信息已更新!";
 $_LANG['contactDeleted'] = "联系人信息已删除!";
-////////// End of english language file.  Do not place any translation strings below this line!
+$_LANG['recommended'] = "Recommended";
+
+$_LANG['ssl']['siteSeal'] = "安全签章";
+$_LANG['ssl']['getSiteSeal'] = "获取安全签章的代码";
+$_LANG['ssl']['copyTheSiteSeal'] = "从文本框复制您的安全签章:";
+$_LANG['ssl']['howToUseSiteSeal'] = "如何使用安全签章的代码?";
+$_LANG['ssl']['siteSealError1'] = "只有在数字证书颁发机构签发发证书后,您才能获取安全签章的HTML代码.";
+$_LANG['ssl']['sealSuccess'] = "您的安全签章代码已成功获取.";
+$_LANG['ssl']['rapidSslInstructions'] = "将签章代码复制到您希望显示的区域!";
+$_LANG['ssl']['siteSealInstructions1'] = "将签章代码复制到您希望显示的区域!";
+$_LANG['ssl']['siteSealInstructions2'] = "将签章代码复制到您希望显示的区域!";
+$_LANG['ssl']['certError1'] = "只有在CA证书颁发机构颁发证书后才能获取。";
+$_LANG['ssl']['certError2'] = "如果您最近提交了申请, 请留出时间让证书颁发机构完成安全检查并颁发证书。对于DV证书订单，这通常在24小时内。OV和EV 证书可能需要长达 3-5 天的时间。";
+$_LANG['ssl']['certError3'] = "如果您继续看到此消息,请 <a href=\"submitticket.php\">联系技术支持</a>.";
+$_LANG['ssl']['retrieved'] = "系统成功获取到您的数字证书";
+$_LANG['ssl']['copyCert'] = "从下面的文本中复制你的证书:";
+$_LANG['ssl']['installing'] = "安装您的证书";
+$_LANG['ssl']['howToInstall'] = "要安装您的数字证书，请将上面的证书上传到您的服务器或控制面板，如果您不清楚如何部署，开联系技术支持协助";
+$_LANG['ssl']['installFurtherInfo'] = "更多信息,可以查询我们的技术支持文档.";
+
+$_LANG['copyToClipboard'] = "复制到剪贴板";
+////////// End of chinese language file.  Do not place any translation strings below this line!
+
