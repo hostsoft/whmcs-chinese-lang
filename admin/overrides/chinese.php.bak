@@ -2222,7 +2222,7 @@ $_ADMINLANG['contactpermissions']['permemails'] = "查看电子邮件";
 $_ADMINLANG['contactpermissions']['permorders'] = "新购/升级/取消";
 $_ADMINLANG['contactpermissions']['permquotes'] = "查看/接受报价";
 $_ADMINLANG['contactpermissions']['permproductsso'] = "允许单点登录";
-
+// 氢快搜索 www.Gatherso.com
 
 # Statuses
 $_ADMINLANG['status']['active'] = "已激活";

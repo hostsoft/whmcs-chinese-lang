@@ -12,11 +12,11 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     WHMCS Limited <development@whmcs.com>
- * @copyright  Copyright (c) WHMCS Limited 2005-2018
+ * @author     Rodots <cp@gatherso.com>
+ * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
- * @link       https://www.whmcs.com/
+ * @link       https://www.h2fast.cn/
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
