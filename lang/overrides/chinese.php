@@ -2190,7 +2190,7 @@ $_LANG['pricing']['renewal'] = "续期";
 $_LANG['pricing']['selectExtCategory'] = "请从上面选择一个类别。";
 $_LANG['pricing']['noExtensionsDefined'] = "没有可用的扩展";
 
-$_LANG['navStore'] = "在线购买";
+$_LANG['navStore'] = "在线商店";
 $_LANG['navBrowseProductsServices'] = "浏览全部";
 
 $_LANG['navWebsiteSecurity'] = "网站与安全";

@@ -144,6 +144,7 @@ $_ADMINLANG['global']['learnMore'] = "了解更多";
 $_ADMINLANG['global']['activate'] = "激活";
 $_ADMINLANG['global']['deactivate'] = "停用";
 $_ADMINLANG['global']['saveAndActivate'] = "保存并激活";
+$_ADMINLANG['global']['areYouSure'] = "您确认吗?";
 $_ADMINLANG['global']['copy'] = "复制";
 $_ADMINLANG['global']['pleaseCheckInput'] = "在继续之前请先检查您的输入。";
 $_ADMINLANG['global']['promotions'] = "促销";
@@ -163,8 +164,8 @@ $_ADMINLANG['global']['dismiss'] = "忽略";
 $_ADMINLANG['global']['import'] = "导入";
 $_ADMINLANG['global']['custom'] = "自定义";
 $_ADMINLANG['global']['clear'] = "清除";
-$_ADMINLANG['global']['aMonth'] = ":月份";
-$_ADMINLANG['global']['someMonths'] = ":months Months";
+$_ADMINLANG['global']['aMonth'] = ":months 月";
+$_ADMINLANG['global']['someMonths'] = ":months 月";
 $_ADMINLANG['global']['new'] = "新";
 $_ADMINLANG['global']['stepOfStep'] = "步骤<span class=\"step\">:step</span> 中的 <span class=\"steps\">:steps</span>";
 $_ADMINLANG['global']['finish'] = "完成";
@@ -196,7 +197,7 @@ $_ADMINLANG['global']['pause'] = "暂停";
 $_ADMINLANG['global']['resume'] = "继续";
 $_ADMINLANG['global']['deletedUser'] = "已删除的用户";
 $_ADMINLANG['global']['areYouSure'] = "确定吗？";
-$_ADMINLANG['global']['idnDomain'] = "国际域名";
+$_ADMINLANG['global']['idnDomain'] = "IDN域名";
 $_ADMINLANG['global']['userSystem'] = "系统/自动";
 $_ADMINLANG['global']['never'] = "从不";
 $_ADMINLANG['global']['typeToSearchUsersAndContacts'] = "开始键入以添加或选择收件人";
@@ -220,6 +221,7 @@ $_ADMINLANG['global']['desc'] = "倒序";
 $_ADMINLANG['global']['seeformore'] = "更多信息，请参见 :subject。";
 $_ADMINLANG['global']['recentlyVisited'] = "最近访问过";
 $_ADMINLANG['global']['reloadTryAgain'] = "重新加载页面并重试。";
+$_ADMINLANG['global']['warning'] = "警告";
 
 # 错误
 $_ADMINLANG['error']['connection'] = "连接错误";
@@ -227,6 +229,7 @@ $_ADMINLANG['error']['authentication'] = "身份验证错误";
 $_ADMINLANG['error']['widgetError'] = "小部件加载错误";
 $_ADMINLANG['error']['balanceWidgetError'] = "余额无法检索";
 $_ADMINLANG['error']['balanceWidgetDescription'] = "请参考 :moduleName 文档并检查 :moduleName 模块配置。";
+$_ADMINLANG['error']['formInputVarsExceededError'] = "The system could not process your submission because PHP’s max_input_vars setting is too low. <a href=\"https://go.whmcs.com/1809/PHP-max-input-vars-Setting-Errors\" class=\"alert-link\">Click here</a> for more information.";
 
 # Home
 $_ADMINLANG['home']['title'] = "后台首页";
@@ -650,6 +653,7 @@ $_ADMINLANG['addons']['predefinedNotice'] = "您正在创建一个预定义的�
 $_ADMINLANG['addons']['predefinedSuccessInfo'] = "您的预定义插件已成功添加，并且已为您配置设置。请配置定价并保存更改。";
 $_ADMINLANG['addons']['predefinedActive'] = "激活";
 $_ADMINLANG['addons']['invalidModuleForType'] = "所选模块对插件类型无效。";
+$_ADMINLANG['addons']['productSpecificOnDemandRenewalConfiguration'] = "Use Addon-Specific Configuration";
 
 # Domains
 $_ADMINLANG['domains']['title'] = "域名";
@@ -664,7 +668,7 @@ $_ADMINLANG['domains']['year'] = "年";
 $_ADMINLANG['domains']['years'] = "年";
 $_ADMINLANG['domains']['domainaddons'] = "域名附加选项";
 $_ADMINLANG['domains']['nameserver'] = "域名服务器";
-$_ADMINLANG['domains']['eppcode'] = "EPP Code";
+$_ADMINLANG['domains']['eppcode'] = "EPP代码";
 $_ADMINLANG['domains']['addons'] = "域名附加选项";
 $_ADMINLANG['domains']['dnsmanagement'] = "DNS 管理";
 $_ADMINLANG['domains']['emailforwarding'] = "邮件转发";
@@ -739,6 +743,7 @@ $_ADMINLANG['domains']['pricingtitle'] = "域名/顶级域名";
 $_ADMINLANG['domains']['pricetitle'] = "域名价格：";
 $_ADMINLANG['domains']['checkBoxToEnable'] = "选中复选框启用定价的货币和期限。";
 $_ADMINLANG['domains']['leaveAtNegativeOne'] = "设置转移/续费价格为 -1 以禁用此项目的转移和续费";
+$_ADMINLANG['domains']['multiyearTransferNote'] = "很多后缀的注册局不允许多年转入操作.";
 $_ADMINLANG['domains']['delsureextension'] = "您确定要从价格清单上删除此域名扩展？";
 $_ADMINLANG['domains']['pricinginfo'] = "在这里您可以配置顶级域名让用户可以注册/转移域名到您这里。除了价格之外，您还可以设置哪个附加选项对应哪个顶级域名，是否自动注册，注册到哪个注册商。";
 $_ADMINLANG['domains']['autoreg'] = "自动注册";
@@ -761,6 +766,7 @@ $_ADMINLANG['domains']['resetpricingslab'] = "重设基础报价单价格";
 $_ADMINLANG['domains']['resetpricingslabconfirm'] = "您确定要重设此基础报价单的价格？";
 $_ADMINLANG['domains']['domainregcontact'] = "域名注册联系人";
 $_ADMINLANG['domains']['domainregcontactorderinfo'] = "定义用于此订单的所有域名注册的名称和地址信息。如果您需要添加新联系人，%s 请先新建联系人 %s 然后再重建订单。";
+$_ADMINLANG['domains']['domainregcontactordercreate'] = "请先创建联系人";
 $_ADMINLANG['domains']['domaincontactchoose'] = "选择联系人";
 $_ADMINLANG['domains']['domaincontactuseprimary'] = "使用主资料";
 $_ADMINLANG['domains']['domaincontactprimary'] = "账户所有者信息";
@@ -999,6 +1005,12 @@ $_ADMINLANG['orders']['addonFeature'] = "附加功能";
 $_ADMINLANG['orders']['invalidAffiliate'] = "无效的附属。";
 $_ADMINLANG['orders']['selfReferral'] = "自我推荐无效。";
 $_ADMINLANG['orders']['referralSuccess'] = "会员已成功分配。";
+$_ADMINLANG['orders']['serviceRenewal']['title'] = "服务续费";
+$_ADMINLANG['orders']['serviceRenewal']['serviceId'] = "服务ID #:id";
+$_ADMINLANG['orders']['serviceRenewal']['notFoundWarning'] = "The system could not find Service ID #:id in the WHMCS database.";
+$_ADMINLANG['orders']['addonRenewal']['title'] = "Addon Renewal";
+$_ADMINLANG['orders']['addonRenewal']['addonId'] = "Addon ID #:id";
+$_ADMINLANG['orders']['addonRenewal']['notFoundWarning'] = "The system could not find Addon ID #:id in the WHMCS database.";
 
 
 # Billing Cycles
@@ -1153,6 +1165,10 @@ $_ADMINLANG['invoices']['deleteConfirm'] = "您要继续操作吗？";
 $_ADMINLANG['invoices']['massTransactionMissingInvoice'] = "无法找到以下账单 ID 且未应用付款：:invoiceIds。";
 $_ADMINLANG['invoices']['invalidInvoiceIDs'] = "无法找到您输入的账单 ID: :invoiceIds";
 $_ADMINLANG['invoices']['addNewItem'] = "添加新的账单项目。";
+$_ADMINLANG['invoices']['adminViewInvoiceWarning'] = "您正在以管理员身份查看订单.";
+$_ADMINLANG['invoices']['adminViewInvoiceSolution'] = "使用客户身份登录完成支付.";
+$_ADMINLANG['invoices']['viewInvoice'] = "查看订单";
+$_ADMINLANG['invoices']['manageInvoice'] = "管理订单";
 
 # Billable Items
 $_ADMINLANG['billableitems']['title'] = "收费项目";
@@ -2332,6 +2348,7 @@ $_ADMINLANG['permissions']['31'] = "删除交易流水信息";
 $_ADMINLANG['permissions']['33'] = "列出账单";
 $_ADMINLANG['permissions']['34'] = "生成账单";
 $_ADMINLANG['permissions']['124'] = "生成逾期账单";
+$_ADMINLANG['permissions']['158'] = "查看账单";
 $_ADMINLANG['permissions']['35'] = "管理账单";
 $_ADMINLANG['permissions']['36'] = "删除账单";
 $_ADMINLANG['permissions']['92'] = "退款账单";
@@ -2833,6 +2850,7 @@ $_ADMINLANG['products']['groupTagline'] = "产品组标语";
 $_ADMINLANG['products']['groupTaglinePlaceHolder'] = "例如：凭我们 30 天退款保证，您千万不要错过！";
 $_ADMINLANG['products']['groupTemplateUseSystemDefault'] = "使用系统默认";
 $_ADMINLANG['products']['groupTemplateUseSpecificTemplate'] = "使用指定模板";
+$_ADMINLANG['products']['productSpecificOnDemandRenewalConfiguration'] = "使用特别产品配置";
 $_ADMINLANG['products']['noModuleConfigurationRequired'] = "无需要的配置模块";
 $_ADMINLANG['products']['serverConfigurationInvalid'] = "由于服务器配置不完整所以无法连接";
 $_ADMINLANG['products']['serverReturnedError'] = "尝试从服务器获取数据时返回如下错误：:error";
@@ -3403,6 +3421,7 @@ $_ADMINLANG['mergefields']['lastpaymentamount'] = "上次付款金额";
 $_ADMINLANG['mergefields']['lastpaymenttransid'] = "上次付款流水编号";
 $_ADMINLANG['mergefields']['paymentlink'] = "付款链接";
 $_ADMINLANG['mergefields']['invoicelink'] = "账单链接";
+$_ADMINLANG['mergefields']['invoiceurl'] = '账单URL';
 $_ADMINLANG['mergefields']['prevbalance'] = "往期金额";
 $_ADMINLANG['mergefields']['invoicesbalance'] = "所有逾期账单金额";
 $_ADMINLANG['mergefields']['product'] = "产品/服务相关";
@@ -3416,6 +3435,7 @@ $_ADMINLANG['mergefields']['nameserver'] = "域名服务器";
 $_ADMINLANG['mergefields']['ip'] = "IP地址";
 $_ADMINLANG['mergefields']['suspreason'] = "暂停原因";
 $_ADMINLANG['mergefields']['canceltype'] = "取消类型";
+$_ADMINLANG['mergefields']['immediateCancel'] = "服务立刻取消 (bool)";
 $_ADMINLANG['mergefields']['customfieldsarray'] = "自定义字段(Array)";
 $_ADMINLANG['mergefields']['order'] = "订单相关";
 $_ADMINLANG['mergefields']['duetoday'] = "今日逾期总计";
@@ -3499,7 +3519,8 @@ $_ADMINLANG['fraud']['verificationProviders'] = "身份验证提供者";
 $_ADMINLANG['general']['title'] = "常规设置";
 $_ADMINLANG['general']['changesuccess'] = "更改已成功保存！";
 $_ADMINLANG['general']['changesuccessinfo'] = "配置设置已成功保存";
-$_ADMINLANG['general']['errorinvnumtoosml'] = "下一个账单号必须比已有的账单号大";
+$_ADMINLANG['general']['errorinvnuminvalid'] = "The next invoice number must be greater than the highest existing invoice number and less than 500,000,000.";
+$_ADMINLANG['general']['errorinvoiceincrementinvalid'] = "The invoice increment number must be between 1 and 999.";
 $_ADMINLANG['general']['tabgeneral'] = "常规";
 $_ADMINLANG['general']['tablocalisation'] = "本地化";
 $_ADMINLANG['general']['tabordering'] = "购买";
@@ -3615,13 +3636,20 @@ $_ADMINLANG['general']['bulkdomainsearch'] = "批量域名查询";
 $_ADMINLANG['general']['bulkdomainsearchinfo'] = "选中复选框，启用通过在订单上查询域名";
 $_ADMINLANG['general']['bulkchecktlds'] = "批量检查顶级域名";
 $_ADMINLANG['general']['bulkchecktldsinfo'] = "当客户创建订单时在这里选择您想要额外检查的顶级域名（注意：您选择的越多，订单花费的时间就越长）";
-
+$_ADMINLANG['general']['allowidndomains'] = "允许 IDN 域名";
 $_ADMINLANG['general']['domainlookup'] = "域名查询";
 $_ADMINLANG['general']['stdwhois'] = "标准 Whois 信息";
 $_ADMINLANG['general']['stdwhoisDesc'] = "使用标准公共 Whois 服务查询";
 $_ADMINLANG['general']['domainLookupProviderHasNoSettings'] = "域名查询提供商“%s”未设置配置";
 $_ADMINLANG['general']['invalidSettingsForDomainLookupProvider'] = "为域名查询提供商“%s”提交的设置无效";
 $_ADMINLANG['general']['failedToSaveSettingsForDomainLookupProvider'] = "域名查询提供商“%s”保存设置失败";
+
+$_ADMINLANG['general']['domainlookup'] = "域名搜索";
+$_ADMINLANG['general']['stdwhois'] = "标准WHOIS";
+$_ADMINLANG['general']['stdwhoisDesc'] = "使用标准公开Whois服务提供服务.";
+$_ADMINLANG['general']['domainLookupProviderHasNoSettings'] = "Domain Lookup Provider '%s' has no settings for configuration";
+$_ADMINLANG['general']['invalidSettingsForDomainLookupProvider'] = "Invalid settings submitted for Domain Lookup Provider '%s'";
+$_ADMINLANG['general']['failedToSaveSettingsForDomainLookupProvider'] = "Failed to save settings for Domain Lookup Provider '%s'";
 
 $_ADMINLANG['general']['configuretldsuggestions'] = "配置顶级域名建议";
 $_ADMINLANG['general']['configurenamespinner'] = "配置 NameSpinner";
@@ -4380,6 +4408,7 @@ $_ADMINLANG['reports']['group']['clients'] = "客户";
 $_ADMINLANG['reports']['group']['support'] = "支持";
 $_ADMINLANG['reports']['group']['exports'] = "出口";
 $_ADMINLANG['reports']['group']['system'] = "系统";
+$_ADMINLANG['reports']['clientStatement']['previousBalance'] = "变更前余额";
 
 # WHOIS
 $_ADMINLANG['whois']['title'] = "域名 WHOIS 查询";
@@ -4469,6 +4498,8 @@ $_ADMINLANG['configservers']['defaultsignups'] = "默认为新注册用户激活
 $_ADMINLANG['configservers']['accounts'] = "帐户";
 $_ADMINLANG['configservers']['domains'] = "域";
 $_ADMINLANG['configservers']['services'] = "服务";
+$_ADMINLANG['configservers']['invalidProfile']['cpanel'] = "This module requires a cPanel & WHM server with a valid license and the 'Standard' server profile.";
+$_ADMINLANG['configservers']['invalidProfile']['wps'] = "This module requires a WP Squared server with a valid license.";
 
 $_ADMINLANG['configservers']['testconnection'] = "测试连接";
 $_ADMINLANG['configservers']['testconnectionloading'] = "正在测试连接…";
@@ -4522,6 +4553,7 @@ $_ADMINLANG['emailmarketer']['delete'] = "您确定要删除此邮件条目吗�
 $_ADMINLANG['linktracking']['delete'] = "您确定要删除此链接吗？";
 
 $_ADMINLANG['email']['sentSuccessfully'] = "邮件已成功发送。";
+$_ADMINLANG['email']['sentSuccessfullyTo'] = "邮件已经成功发送至 :entityName";
 $_ADMINLANG['email']['emailAborted'] = "邮件发送中止。";
 
 // eNom Name Spinner
@@ -4742,6 +4774,10 @@ $_ADMINLANG['openid']['clientSecret'] = "客户密钥";
 $_ADMINLANG['openid']['resetClientSecret'] = "重置客户密钥";
 $_ADMINLANG['openid']['creationDate'] = "创建日期";
 $_ADMINLANG['openid']['creationOnFirstSave'] = "客户 API 凭证将会在第一次保存时自动生成。";
+$_ADMINLANG['openid']['clientSecret'] = "客户密钥";
+$_ADMINLANG['openid']['resetClientSecret'] = "重置客户密钥";
+$_ADMINLANG['openid']['creationDate'] = "创建日期";
+$_ADMINLANG['openid']['creationOnFirstSave'] = "Client API Credentials will be generated upon first save.";
 $_ADMINLANG['openid']['logoUrl'] = "Logo URL";
 $_ADMINLANG['openid']['logoUrlMsg'] = "此应用 logo 图像的 URL 或相对路径基于 WHMCS 用户中心的目录";
 $_ADMINLANG['openid']['logoUrlEg'] = "例如：/path/to/logo.png";
@@ -6049,6 +6085,7 @@ $_ADMINLANG['usagebilling']['metric']['subDomains'] = "子域";
 $_ADMINLANG['usagebilling']['metric']['mysqlDatabases'] = "MySQL® 数据库";
 $_ADMINLANG['usagebilling']['metric']['mysqlDiskUsage'] = "MySQL® 磁盘使用情况";
 $_ADMINLANG['usagebilling']['metric']['subAccounts'] = "子账户";
+$_ADMINLANG['usagebilling']['metric']['wpInstances'] = "WordPress Instances";
 
 $_ADMINLANG['paypalCheckout']['linkAccount'] = "连接到PayPal账户";
 $_ADMINLANG['paypalCheckout']['unlinkAccount'] = "取消连接PayPal账户";
@@ -6057,16 +6094,44 @@ $_ADMINLANG['paypalCheckout']['unlinkSandboxAccount'] = "取消连接Sandbox账�
 $_ADMINLANG['paypalCheckout']['unlinkAccountMsg'] = "<p><strong>** :mode **</strong></p><p>如果您继续，WHMCS将不再接收在此帐户链接处于活动状态时已设置的任何PayPal订阅的付款通知。因此，WHMCS将不会知道成功付款。</p><p>你确定要继续吗？</p><p><strong>警告:</strong> 此操作是不可逆的，并且无法撤消。</p>";
 $_ADMINLANG['paypalCheckout']['sslRequired'] = "<strong>PayPal 要求 API 请求使用 HTTPS 安全连接。</strong>您当前的 <a :configGeneral>WHMCS 系统 URL</a> 设置不是以 https 并且将被拒绝。<br>要链接 PayPal，请将 SSL 证书添加到您安装 WHMCS 的域并更新您的 WHMCS 系统 URL 设置。<a :learnMore>了解更多</a>";
 
-$_ADMINLANG['emailPreferences']['affiliate'] = "推广联盟电子邮件 - 接收推广联盟通知";
-$_ADMINLANG['emailPreferences']['domain'] = "域名电子邮件 - 注册/转移确认和续订通知";
-$_ADMINLANG['emailPreferences']['general'] = "一般电子邮件 - 所有帐户相关的电子邮件";
-$_ADMINLANG['emailPreferences']['invoice'] = "账单电子邮件 - 新账单,提醒和过期通知";
-$_ADMINLANG['emailPreferences']['product'] = "产品电子邮件 - 开通,暂停和其他周期通知";
-$_ADMINLANG['emailPreferences']['support'] = "工单电子邮件 - 接收所有工单的抄送";
-$_ADMINLANG['emailPreferences']['supportContact'] = "工单电子邮件 - 接收由上级帐户持有人创建的所有工单的副本";
-$_ADMINLANG['emailPreferences']['oneRequired'] = "您必须至少启用一个电子邮件地址才能接收ICANN要求的与域相关的通知。";
+$_ADMINLANG['paypalCommerce']['labelEnvironment'] = "账户";
+$_ADMINLANG['paypalCommerce']['labelEnvironmentLive'] = "正式账户";
+$_ADMINLANG['paypalCommerce']['labelEnvironmentSandbox'] = "测试账户";
+$_ADMINLANG['paypalCommerce']['linkLiveAccount'] = "链接PayPal账户";
+$_ADMINLANG['paypalCommerce']['unlinkLiveAccount'] = "取消链接PayPal账户";
+$_ADMINLANG['paypalCommerce']['linkSandboxAccount'] = "链接PayPal测试账户";
+$_ADMINLANG['paypalCommerce']['unlinkSandboxAccount'] = "取消链接PayPal测试账户";
+$_ADMINLANG['paypalCommerce']['refreshMerchantStatus'] = "刷新商户状态";
+$_ADMINLANG['paypalCommerce']['messageAccountLimited'] = "[:environment] PayPal限制了您的帐户。检查您的PayPal帐户的电子邮件地址，以获取来自PayPal的消息，并了解开始接收付款的下一步步骤。";
+$_ADMINLANG['paypalCommerce']['messageVerifyEmail'] = "[:environment] 您的PayPal帐户的电子邮件地址未经确认。检查来自PayPal的电子邮件并确认您的电子邮件地址以开始接受付款。";
+$_ADMINLANG['paypalCommerce']['labelPaymentsReceivable'] = "应收款";
+$_ADMINLANG['paypalCommerce']['labelEmailVerified'] = "电子邮件已验证";
+$_ADMINLANG['paypalCommerce']['unlinkAccountMsg'] = "<p><strong>** :mode **</strong></p><p>If you proceed, WHMCS will stop capturing payment using vaulted pay methods that customers stored while this account link was active.</p><p>Are you sure that you want to continue?</p><p><strong>Warning:</strong> This action is irreversible and you cannot undo it.</p>";
+$_ADMINLANG['paypalCommerce']['unlinkErrorGeneral'] = "取消链接您的PayPal帐户时出错。";
+$_ADMINLANG['paypalCommerce']['sslRequired'] = "<strong>PayPal要求API请求使用HTTPS安全连接。</strong> 您当前的 <a :configGeneral>WHMCS System URL</a> 设置不是以 <i>https</i>开头，PayPal将拒绝它。<br> 若要链接PayPal，请将SSL证书添加到您安装WHMCS的域，并更新您的WHMCS系统的URL设置。 <a :learnMore>了解更多</a>";
+$_ADMINLANG['paypalCommerce']['deactivateUnavailableModuleAdvCards'] = "您必须先停用 :sibling 支付网关模块，然后才能停用此模块。";
+$_ADMINLANG['paypalCommerce']['visibleRequiredWhenModuleAdvCards'] = "PayPal® requires you to display the  payment gateway if you are displaying the :subordinate_module payment gateway.  'Show on Order Form' for the :action_module payment gateway first.";
+$_ADMINLANG['paypalCommerce']['capabilitiesDesc'] = "To use a PayPal feature, it must be available in your region and activated in your PayPal® account. Link a PayPal® :activeAccountLabel to view your available features. <a href=\"http://go.whmcs.com/1797/PayPal-Merchant-Status\" target=\"_blank\">了解更多</a>.";
+$_ADMINLANG['paypalCommerce']['capabilitiesLabel'] = "功能";
+$_ADMINLANG['paypalCommerce']['capabilityVaultDesc'] = "Vaulting 允许客户存储付款方式，以供自动结算在将来使用。.";
+$_ADMINLANG['paypalCommerce']['capabilityVaultLabel'] = "Vault";
+$_ADMINLANG['paypalCommerce']['capabilityCardsDesc'] = "此功能允许您接受信用卡和借记卡。您必须激活此功能，然后才能为此支付网关启用 \"在订单上显示\" ";
+$_ADMINLANG['paypalCommerce']['capabilityCardsLabel'] = "Advanced Cards";
+$_ADMINLANG['paypalCommerce']['credentialsRequiredWhenVisible'] = "您必须关联 PayPal®账户 然后才能为此支付网关启用 \"在订单上显示\" .";
+
+$_ADMINLANG['paypalCommerceAdvCards']['infoSharedSettings'] = "此支付网关模块使用来自的PayPal®帐户配置  :module 模块. 如果需要配置请更新 :module 模块.";
+$_ADMINLANG['paypalCommerceAdvCards']['missingCapability'] = "您必须激活 \"Advanced Cards\" 功能，然后才能为此支付网关启用 \"在订单上显示\" .";
+
+$_ADMINLANG['emailPreferences']['affiliate'] = "联盟电子邮件——接收联盟通知";
+$_ADMINLANG['emailPreferences']['domain'] = "域名电子邮件 - 注册/转让确认与续费通知";
+$_ADMINLANG['emailPreferences']['general'] = "常规电子邮件 - 所有帐户相关电子邮件";
+$_ADMINLANG['emailPreferences']['invoice'] = "发票电子邮件 - 新发票，提醒和逾期通知";
+$_ADMINLANG['emailPreferences']['product'] = "产品电子邮件 - 欢迎电子邮件，暂停和其他生命周期通知";
+$_ADMINLANG['emailPreferences']['support'] = "支持电子邮件 - 接收所有支持工单通信的副本";
+$_ADMINLANG['emailPreferences']['supportContact'] = "支持电子邮件 - 接收由父帐户持有人创建的所有支持工单通信的副本";
+$_ADMINLANG['emailPreferences']['oneRequired'] = "您必须至少启用一个电子邮件地址才能接收 ICANN 要求的与域名相关的通知。";
 $_ADMINLANG['emailPreferences']['domainContactRequired'] = "要禁用域名通知，请为主要帐户持有人或其他联系人启用域名通知。";
-$_ADMINLANG['emailPreferences']['domainClientRequired'] = "要禁用域名通知，请创建一个设置为接收它们的替代联系人。";
+$_ADMINLANG['emailPreferences']['domainClientRequired'] = "若要停用域名通知，请创建一个替代联系人，并将其设置为接收这些通知。";
 
 $_ADMINLANG['hooksDebugModeWarning']['title'] = "Hooks调试模式已启用";
 $_ADMINLANG['hooksDebugModeWarning']['description'] = "Hooks调试模式将导致大量活动日志条目，因此应谨慎使用。不再需要时应将其关闭。";
@@ -6080,6 +6145,8 @@ $_ADMINLANG['legacySmartyTagsWarning']['description']['settingOnly'] = "系统�
 $_ADMINLANG['legacySmartyTagsWarning']['description']['tagsAndSetting'] = "系统检测到旧版 Smarty 标签可能正在使用中，并且允许 Smarty PHP 标签设置已启用。:anchorOpen在此处了解更多。:anchorClose";
 $_ADMINLANG['globalWarning']['2CheckoutInline']['title'] = "2Checkout Legacy Inline";
 $_ADMINLANG['globalWarning']['2CheckoutInline']['description'] = "2Checkout 已经弃用了他们的传统内联结账方式，现在向客户展示他们的标准体验。我们计划很快删除结账方式选项。";
+$_ADMINLANG['globalWarning']['systemUrlIsSet']['title'] = "Missing System URL";
+$_ADMINLANG['globalWarning']['systemUrlIsSet']['description'] = "You have not configured the System URL for your WHMCS installation. Go to :anchorOpenGeneral Settings:anchorClose to configure it now.";
 
 $_ADMINLANG['twoFactor']['duosecurity']['friendlyName'] = "双重安全";
 $_ADMINLANG['twoFactor']['duosecurity']['description'] = "通过Duo Push、短信或电话回拨获取代码。";
@@ -6491,3 +6558,6 @@ $_ADMINLANG['idna']['labelTooLong'] = "域标签已超过最大长度。";
 $_ADMINLANG['idna']['domainTooLong'] = "域名已超过最大长度。";
 $_ADMINLANG['idna']['invalidDomain'] = "域名无效。";
 $_ADMINLANG['idna']['unknownError'] = "发生未知错误。";
+
+$_ADMINLANG['modules']['servers']['notActiveLabel'] = ":moduleName 模块未激活";
+$_ADMINLANG['modules']['servers']['notActive'] = "<p>This service relies on the :moduleName which is not activated.  Activate this module to utilize the server settings.</p>";
