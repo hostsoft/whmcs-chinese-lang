@@ -7,7 +7,7 @@
 
 ### Version,版本
 
-    兼容至 **WHMCS V8.9.0 RC** , Compatible  WHMCS V8.9.0
+    兼容至 **WHMCS V8.10.1** , Compatible  WHMCS V8.10.1
 
 ### Using,使用
 
