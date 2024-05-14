@@ -1789,6 +1789,7 @@ $_LANG['clientAlerts']['domainsExpiringSoon'] = "您目前有 :numberOfDomains �
 $_LANG['clientAlerts']['invoicesUnpaid'] = "您目前有 :numberOfInvoices 个未付款的账单，请尽快支付。";
 $_LANG['clientAlerts']['invoicesOverdue'] = "您目前有 :numberOfInvoices 个过期账单，合计 :balanceDue。请尽快支付，以免服务被取消。";
 $_LANG['clientAlerts']['creditBalance'] = "您目前的余额为：:creditBalance。";
+$_LANG['clientAlerts']['servicesRenewingSoon'] = "您有 :numberOfServices 产品/服务器即将到期开提前续费.";
 
 // Client homepage panels
 $_LANG['clientHomePanels']['unpaidInvoices'] = "未付款的账单";
@@ -1806,6 +1807,8 @@ $_LANG['clientHomePanels']['recentSupportTicketsNone'] = "近期没有工单。�
 $_LANG['clientHomePanels']['affiliateSummary'] = "您已经通过推广赚到了 :commissionBalance，您需要再赚 :amountUntilWithdrawalLevel 才能够提现。";
 $_LANG['clientHomePanels']['affiliateSummaryWithdrawalReady'] = "您当前的佣金余额为 :commissionBalance，您现在可以提现了。";
 $_LANG['clientHomePanels']['productsAndServices'] = "浏览我们的产品/服务";
+$_LANG['clientHomePanels']['serviceRenewingSoon'] = "产品与服务即将到期";
+$_LANG['clientHomePanels']['serviceRenewingSoonMsg'] = "您有 :numberOfServices 产品与服务即将到期. 开源提前续费.";
 
 $_LANG['upgradeNotPossible'] = "无法升级此产品。如果您认为错误的跳转到了此页面，请联系我们的支持部门。否则请返回并仔细查看您的选项。";
 $_LANG['upgradeSameProductMustExtendCycle'] = "要升级结算周期，请选择一个大于当前结算周期的周期。";
@@ -1919,6 +1922,8 @@ $_LANG['cPanel']['emailAccountCreateFailed'] = "邮箱账户创建失败：";
 $_LANG['cPanel']['packageNotActive'] = "此主机套餐当前";
 $_LANG['cPanel']['statusPendingNotice'] = "直至激活之前您无法使用此主机账户。";
 $_LANG['cPanel']['statusSuspendedNotice'] = "直至重新激活之前您无法使用或管理此套餐。";
+
+$_LANG['wpsquared']['login'] = "登录 WP Squared";
 
 $_LANG['wordpress']['invalidPath'] = "提供的路径无效。";
 
@@ -2547,6 +2552,33 @@ $_LANG['upgradeService']['chooseNew'] = "选择新产品/计划";
 $_LANG['upgradeService']['currentProduct'] = "您当前的产品";
 $_LANG['upgradeService']['recommended'] = "推荐";
 $_LANG['upgradeService']['select'] = "选择";
+
+$_LANG['servicesRenew'] = "续费";
+$_LANG['renewService']['titlePlural'] = "续费服务";
+$_LANG['renewService']['titleSingular'] = "续费服务";
+$_LANG['renewService']['titleAltPlural'] = "续费服务";
+$_LANG['renewService']['titleAltSingular'] = "续费服务";
+$_LANG['renewService']['noServices'] = "您目前没有任何符合续订条件的服务.";
+$_LANG['renewService']['showingServices'] = "显示 :showing 在 :totalCount 服务.";
+$_LANG['renewService']['renewingIn'] = "续费 :days 天";
+$_LANG['renewService']['renewalUnavailable'] = "续费不可用";
+$_LANG['renewService']['serviceNextDueDateBasic'] = "下次逾期日期: :nextDueDate";
+$_LANG['renewService']['serviceNextDueDateExtended'] = "下次逾期日期: :nextDueDate (:nextDueDateFormatted)";
+$_LANG['renewService']['renewalPeriodLabel'] = "续费周期";
+$_LANG['renewService']['renewalPeriod'] = "(:nextDueDate - :nextPayUntilDate) @ :renewalPrice";
+$_LANG['renewService']['searchPlaceholder'] = "使用名称,ID，服务进行搜索";
+$_LANG['renewService']['hideShowServices']['hide'] = "隐藏无需续费的项目";
+$_LANG['renewService']['hideShowServices']['show'] = "显示无需续费的项目";
+
+$_LANG['renewService']['statusInfo']['notSupported'] = "该产品不支持按需续订.";
+$_LANG['renewService']['statusInfo']['nonRecurring'] = "这是一项一次性服务，不使用循环计费。.";
+$_LANG['renewService']['statusInfo']['outsideRenewal'] = "此服务不在续订期内.";
+$_LANG['renewService']['statusInfo']['serviceStatus'] = "产品状态为 :serviceStatus. 续订需要处于有效状态。.";
+$_LANG['renewService']['statusInfo']['unpaidInvoices'] = "产品有 :unpaidInvoiceCount 未支付账单(s).";
+$_LANG['renewService']['statusInfo']['metricUsage'] = "这是按使用量计费的服务，不支持按需续订.";
+
+$_LANG['renewServiceAddon']['titleAltSingular'] = "Addon 续费";
+$_LANG['renewServiceAddon']['titleAltPlural'] = "Addon 续费";
 
 $_LANG['feeds']['itemsInBasket'] = "在您的购物车中有 <b>:count</b> 个物品";
 
@@ -3432,6 +3464,7 @@ $_LANG['errors']['tryAgainOrSupport'] = "请稍后重试或<a href=\"submitticke
 
 $_LANG['paymentMethods']['iban'] = "银行账号";
 $_LANG['paymentMethods']['mandateAcceptance'] = "通过提供您的银行账号并确认此付款，您即授权我们的付款服务提供商 :companyName 和 Stripe 向您的银行发送指令以从您的账户中扣款。根据您与银行达成的协议条款和条件，您有权从银行获得退款。必须从您的账户扣款之日起 8 周内要求退款。";
+$_LANG['paymentMethods']['achMandateAcceptance'] = "By clicking 'Submit Payment', you authorise :companyName to debit the bank account specified above for any amount owed for charges arising from your use of :companyName's services and/or purchase of products from :companyName, pursuant to :companyName's website and terms, until this authorisation is revoked. You may amend or cancel this authorisation at any time by providing notice to :companyName with 30 (thirty) days notice. If you use :companyName services or purchase additional products periodically pursuant to :companyName's terms, you authorise :companyName to debit your bank account periodically. Payments that fall outside the regular debits authorised above will only be debited after your authorisation is obtained.";
 
 $_LANG['metrics']['title'] = "按量";
 $_LANG['metrics']['explanation'] = "除基本价格外，此产品还包含基于使用情况的计费费用。使用情况指标及其定价信息如下所示。";
@@ -3498,7 +3531,13 @@ $_LANG['marketConnect']['nordvpn']['clientOutput']['4'] = '如果您已经有一
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
 $_LANG['redirectingToCompleteCheckout'] = "您已完成结帐,正在跳转。请耐心等待...";
+
 $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
+$_LANG['paypalCommerce']['payerApprovedPlaceholder'] = "Linked Account";
+$_LANG['paypalCommerce']['paymentInstructions'] = "To complete payment with PayPal, choose an existing linked PayPal account or link a new account.";
+$_LANG['paypalCommerce']['payerApprovedInstructions'] = "Click below to finish checking out with PayPal.";
+$_LANG['paypalCommerce']['linkAccount'] = "Link a New PayPal Account";
+$_LANG['paypalCommerce']['error']['noAccount'] = "You must select an existing linked PayPal account or link a new account before making payment.";
 
 $_LANG['fromJust'] = "请求中";
 $_LANG['forJust'] = "完成中";
@@ -3723,7 +3762,7 @@ $_LANG['userManagement']['removeAccessSure'] = "确定要删除此用户的访�
 $_LANG['userManagement']['removeAccessInfo'] = "他们将不再能够访问或管理此帐户。";
 $_LANG['userManagement']['cancelInviteSure'] = "您确定要取消此邀请吗？";
 $_LANG['userManagement']['cancelInviteInfo'] = "不会通知用户此取消。";
-$_LANG['userManagement']['permissionsUpdateSuccess'] = "Permissions updated successfully!";
+$_LANG['userManagement']['permissionsUpdateSuccess'] = "权限已经更新成功!";
 $_LANG['userManagement']['userRemoveSuccess'] = "用户已成功删除！";
 $_LANG['userManagement']['inviteSentSuccess'] = "邀请发送成功！";
 $_LANG['userManagement']['alreadyLinked'] = "输入的电子邮件地址已经是该账户的用户";
@@ -3896,6 +3935,7 @@ $_LANG['idnLanguage']['uzb'] = "Uzbek";
 $_LANG['idnLanguage']['vie'] = "Vietnamese";
 $_LANG['idnLanguage']['wel'] = "Welsh";
 $_LANG['idnLanguage']['yid'] = "Yiddish";
+$_LANG['idnLanguage']['invalidSelectionForTld'] = "无效的IDN语言 :tld 后缀";
 $_LANG['cart']['idnLanguageDescription'] = "我们检测到您输入的域是国际域名。为了继续，请选择所需的域语言。";
 $_LANG['cart']['idnLanguage'] = "选择IDN国际语言";
 $_LANG['cart']['selectIdnLanguageForRegister'] = "请选择您想要注册的域名的语言。";
@@ -4418,6 +4458,7 @@ $_LANG['usagebilling']['metric']['subDomains'] = "子域";
 $_LANG['usagebilling']['metric']['mysqlDatabases'] = "MySQL 数据库";
 $_LANG['usagebilling']['metric']['mysqlDiskUsage'] = "MySQL 磁盘使用情况";
 $_LANG['usagebilling']['metric']['subAccounts'] = "子账户";
+$_LANG['usagebilling']['metric']['wpInstances'] = "WordPress 实例";
 
 $_LANG['idna']['emptyLabel'] = "域名输入为空。";
 $_LANG['idna']['labelTooLong'] = "域标签已超过最大长度。";
@@ -4437,8 +4478,8 @@ $_LANG['store']['ssl']['landingPage']['multiYear']['p1'] = "多年期证书让�
 $_LANG['store']['ssl']['landingPage']['multiYear']['p2'] = "最初，您将收到一个在证书颁发机构浏览器论坛允许的最长期限内有效的证书（1年零 1 个月），有权在订单期间无限次重新颁发证书。";
 $_LANG['store']['ssl']['landingPage']['multiYear']['p3'] = "自动补发将在整个期限内自动进行，以确保您的网站得到持续保护。";
 $_LANG['store']['ssl']['landingPage']['multiYear']['p4'] = "例如，2 年 SSL 证书订单的工作方式如下：";
-$_LANG['store']['ssl']['landingPage']['multiYear']['p5'] = "SSL证书必须定期重新验证。最长证书有效期为13个月，需要每年重新验证。";
-$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['title'] = "Benefits";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p5'] = "SSL证书必须定期重新验证。最长证书有效期为13个月，需要每年重新验证。";$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['title'] = "Benefits";
+$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['title'] = "优点";
 $_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b1'] = "您购买的每一年的保险都享受越来越多的折扣。";
 $_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b2'] = "免去按年计费的麻烦。";
 $_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b3'] = "年度验证。在较短的有效期证书中每年验证身份可防止潜在的欺诈和欺骗.";
@@ -4539,5 +4580,37 @@ $_LANG['store']['xoviNow']['promo']['sidebar']['title'] = "SEO 工具";
 $_LANG['store']['xoviNow']['promo']['sidebar']['body'] = "通过准确、可靠且易于使用的网站排名、关键字和顾问。";
 $_LANG['store']['xoviNow']['cartTitle'] = "SEO 工具";
 $_LANG['store']['xoviNow']['cartShortDescription'] = "通过准确、可靠和易于使用的网站排名、关键字和顾问来提高您的网站性能。";
+
+$_LANG['ssl']['status']['awaitingConfiguration'] = "等待配置";
+$_LANG['ssl']['status']['awaitingIssuance'] = "等待签发";
+$_LANG['ssl']['status']['cancelled'] = "已取消";
+$_LANG['ssl']['status']['completed'] = "已完成";
+$_LANG['ssl']['status']['configurationSubmitted'] = "配置已提交";
+$_LANG['ssl']['status']['expired'] = "已过期";
+$_LANG['ssl']['status']['reissueFailed'] = "重签发失败";
+$_LANG['ssl']['status']['reissuePending'] = "等待重签发";
+$_LANG['ssl']['status']['reissued'] = "已重签发";
+$_LANG['ssl']['x500DN']['organization'] = "公司";
+$_LANG['ssl']['x500DN']['organizationUnit'] = "部门";
+$_LANG['ssl']['x500DN']['locality'] = "地区";
+$_LANG['ssl']['x500DN']['country'] = "国家";
+$_LANG['ssl']['x500DN']['state'] = "州/省";
+$_LANG['ssl']['x500DN']['commonName'] = "通用名称";
+$_LANG['ssl']['x500DN']['domainName'] = "默认域名";
+
+$_LANG['sitejetBuilder']['dashboardPanelTitle'] = "Sitejet Builder";
+$_LANG['sitejetBuilder']['editWebsite'] = "Edit Website";
+$_LANG['sitejetBuilder']['chooseWebsite'] = "Choose a website to manage:";
+$_LANG['sitejetBuilder']['servicePage']['menuEdit'] = "Edit with Sitejet Builder";
+$_LANG['sitejetBuilder']['servicePage']['visitSite'] = "Visit";
+$_LANG['sitejetBuilder']['servicePage']['editSite'] = "Edit with Sitejet Builder";
+$_LANG['sitejetBuilder']['servicePage']['panelTitle'] = "Sitejet Builder";
+$_LANG['sitejetBuilder']['servicePage']['publishProgress'] = "Publishing in progress...";
+$_LANG['sitejetBuilder']['servicePage']['publishSuccess'] = "Success! Your website is published.";
+$_LANG['sitejetBuilder']['get']['title'] = "Get Sitejet Builder";
+$_LANG['sitejetBuilder']['upgradeTo']['title'] = "Upgrade to Sitejet Builder";
+$_LANG['sitejetBuilder']['upsellDescription'] = "A powerful drag-and-drop website builder that helps you build and publish your website.";
+$_LANG['activateNowFor'] = "现在激活价格 :price";
+$_LANG['upgradeToFor'] = "升级到 :package 的价格是 :price";
 
 ////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.7.2 WHMCS-zh-CN
