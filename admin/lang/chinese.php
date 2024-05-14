@@ -561,6 +561,13 @@ $_ADMINLANG['services']['deprovisionsuccess'] = "附加功能取消配置成功"
 $_ADMINLANG['services']['suspend-featuresuccess'] = "附加功能挂起成功";
 $_ADMINLANG['services']['unsuspend-featuresuccess'] = "附加功能取消挂起成功";
 
+$_ADMINLANG['services']['sitejetBuilder']['ssoButton'] = "Log in to Sitejet Builder";
+$_ADMINLANG['services']['sitejetBuilder']['unavailable'] = "Sitejet Builder is not available for this service.";
+$_ADMINLANG['services']['sitejetBuilder']['publishError'] = "The system could not publish the changes to Sitejet Builder.";
+$_ADMINLANG['services']['sitejetBuilder']['publishProgress']['title'] = "Sitejet Builder Publication Progress";
+$_ADMINLANG['services']['sitejetBuilder']['publishProgress']['visitWebsite'] = "Visit Website";
+$_ADMINLANG['services']['sitejetBuilder']['publishProgress']['success'] = "Success! Your website is published.";
+
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
@@ -654,6 +661,9 @@ $_ADMINLANG['addons']['predefinedSuccessInfo'] = "您的预定义插件已成功
 $_ADMINLANG['addons']['predefinedActive'] = "激活";
 $_ADMINLANG['addons']['invalidModuleForType'] = "所选模块对插件类型无效。";
 $_ADMINLANG['addons']['productSpecificOnDemandRenewalConfiguration'] = "Use Addon-Specific Configuration";
+$_ADMINLANG['addons']['predefinedAddons']['sitejet']['title'] = "Sitejet Builder";
+$_ADMINLANG['addons']['predefinedAddons']['sitejet']['panelDescription'] = "Automate provisioning of Sitejet Builder for :panel hosting accounts.";
+$_ADMINLANG['addons']['predefinedAddons']['sitejet']['defaultDescription'] = "Sitejet Builder is a fully-integrated do-it-yourself website builder. It allows you to build and launch competitive websites, fast.";
 
 # Domains
 $_ADMINLANG['domains']['title'] = "域名";
@@ -1169,6 +1179,7 @@ $_ADMINLANG['invoices']['adminViewInvoiceWarning'] = "您正在以管理员身�
 $_ADMINLANG['invoices']['adminViewInvoiceSolution'] = "使用客户身份登录完成支付.";
 $_ADMINLANG['invoices']['viewInvoice'] = "查看订单";
 $_ADMINLANG['invoices']['manageInvoice'] = "管理订单";
+$_ADMINLANG['invoices']['autoCancellation'] = "自动取消 :dayCount 过期天后 - :dateTime.";
 
 # Billable Items
 $_ADMINLANG['billableitems']['title'] = "收费项目";
@@ -1709,6 +1720,36 @@ $_ADMINLANG['utilities']['ticketMailLog']['footer']['importNew'] = "您可以将
 $_ADMINLANG['utilities']['ticketMailLog']['ticketAlert'] = "以下回复被屏蔽，在这工单中不可见：";
 $_ADMINLANG['utilities']['whoislog'] = "Whois 查询日志";
 $_ADMINLANG['utilities']['phpcompat'] = "PHP 版本兼容性";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['prompt']['title'] = "Sitejet Builder (Now Available in cPanel & WHM and Plesk)";
+$_ADMINLANG['utilities']['sitejetBuilder']['prompt']['description'] = "Sitejet Builder integration is now included in both cPanel & WHM and Plesk at no additional cost. Activate Sitejet Builder in WHMCS to easily offer it to your customers as part of hosting plans or as an optional addon. Sitejet Builder is available in <a href='https://go.whmcs.com/1821/cpanel-sitejet-builder' title='Learn more about Sitejet Builder in cPanel' target='_blank'>cPanel & WHM version 116 and later</a> and <a href='https://go.whmcs.com/1825/plesk-sitejet-builder' title='Learn more about Sitejet in Plesk' target='_blank'>Plesk 18.0.57</a> and later.";
+$_ADMINLANG['utilities']['sitejetBuilder']['prompt']['activateButton'] = "Get Started";
+$_ADMINLANG['utilities']['sitejetBuilder']['title'] = "Sitejet Builder";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature1']['title'] = "Easy Access from the Client Area";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature1']['description'] = "Customers can access Sitejet Builder directly from the WHMCS Client Area, without needing to log in to their hosting accounts.";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature2']['title'] = "Customized Hosting Plan View";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature2']['description'] = "Customers with Sitejet Builder access will see a Log In to Sitejet Builder link in the Client Area.";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature3']['title'] = "Automated Promotions";
+$_ADMINLANG['utilities']['sitejetBuilder']['feature3']['description'] = "WHMCS will automatically display promotions for Sitejet Builder if it’s available as a hosting plan upgrade or addon.";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['offerBundleAll']['title'] = "Bundle Sitejet Builder with All Hosting Plans";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerBundleAll']['description'] = "You can choose to provide Sitejet Builder to all of your cPanel & WHM and Plesk hosting customers by default, with no upgrades or addons necessary.";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['offerBundleSelect']['title'] = "Bundle Sitejet Builder with Selected Hosting Plans";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerBundleSelect']['description'] = "You can also choose to only allow selected cPanel & WHM and Plesk packages to access Sitejet Builder. WHMCS will automatically show upgrade promotions to other customers if upgrades are available for their hosting plans.";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerBundleSelect']['button'] = "Manage Hosting Plans";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['offerAddon']['title'] = "Offer Sitejet Builder as an Addon";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerAddon']['description'] = "Offer Sitejet Builder as an optional addon for selected hosting packages. WHMCS will automatically show addon promotions to customers if Sitejet Builder is available to purchase for their hosting plan.";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerAddon']['button'] = "Create Sitejet Builder Addon Plan";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['sitejetHosted']['title'] = "Looking for Sitejet Studio?";
+$_ADMINLANG['utilities']['sitejetBuilder']['sitejetHosted']['description'] = "Coming Soon to WHMCS MarketConnect: Sitejet Studio, with the ability to host websites on Sitejet's infrastructure with no cPanel & WHM or Plesk server required.";
+
+$_ADMINLANG['utilities']['sitejetBuilder']['featureSection']['title'] = "Sitejet Builder Features in WHMCS";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerSection']['title'] = "Offer Sitejet Builder Your Way";
+$_ADMINLANG['utilities']['sitejetBuilder']['offerSection']['description'] = "WHMCS gives you choices for offering Sitejet Builder to your customers:";
+
 $_ADMINLANG['utilities']['linkTracking']['title'] = "链接跟踪";
 $_ADMINLANG['utilities']['linkTracking']['description'] = "链接跟踪系统可让您跟踪人们如何到达您的网站（他们点击了哪些链接），以及从中获得多少转化点击该链接的人.";
 $_ADMINLANG['utilities']['linkTracking']['addNew'] = "添加新链接";
@@ -1811,6 +1852,7 @@ $_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['fail
 $_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noFailed'] = "没有失败的域名续订提醒";
 $_ADMINLANG['utilities']['automationStatusDetail']['closeInactiveTickets']['success']['detail'] = "关闭工单";
 $_ADMINLANG['utilities']['automationStatusDetail']['closeInactiveTickets']['noSuccess'] = "没有因超时而关闭的工单";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceAutoCancellation']['success']['detail'] = "已取消订单";
 $_ADMINLANG['utilities']['automationStatusDetail']['viewModuleQueue'] = "查看模块队列";
 $_ADMINLANG['utilities']['automationStatusDetail']['noModuleQueue'] = "没有模块队列";
 $_ADMINLANG['utilities']['automationStatusDetail']['title'] = "自动化状态";
@@ -1852,6 +1894,7 @@ $_ADMINLANG['utilities']['automationStatusDetail']['task']['inactiveTickets'] = 
 $_ADMINLANG['utilities']['automationStatusDetail']['task']['delayedAffiliateCommissions'] = "延迟关联佣金";
 $_ADMINLANG['utilities']['automationStatusDetail']['task']['emailMarketerRules'] = "电子邮件营销规则";
 $_ADMINLANG['utilities']['automationStatusDetail']['task']['clientStatusUpdate'] = "客户端状态更新";
+$_ADMINLANG['utilities']['automationStatusDetail']['task']['overdueInvoiceCancellations'] = "逾期订单取消";
 $_ADMINLANG['utilities']['automationStatusDetail']['health']['notOk'] = "不正确";
 $_ADMINLANG['utilities']['automationStatusDetail']['health']['notConfigured'] = "未配置";
 $_ADMINLANG['utilities']['automationStatusDetail']['health']['noRecentCronRun'] = "在过去24小时内未检测到cron运行。请仔细检查您的cron配置。";
@@ -2087,6 +2130,7 @@ $_ADMINLANG['fields']['notes'] = "备注";
 $_ADMINLANG['fields']['note'] = "备注信息";
 $_ADMINLANG['fields']['description'] = "描述";
 $_ADMINLANG['fields']['amount'] = "金额";
+$_ADMINLANG['fields']['invoiceamount'] = "账单金额";
 $_ADMINLANG['fields']['totaldue'] = "总计";
 $_ADMINLANG['fields']['balance'] = "结余";
 $_ADMINLANG['fields']['transid'] = "付款流水号";
@@ -2288,6 +2332,8 @@ $_ADMINLANG['status']['paused'] = "已暂停";
 $_ADMINLANG['status']['sending'] = "发送中";
 $_ADMINLANG['status']['deleted'] = "已删除";
 $_ADMINLANG['status']['queued'] = "已排队";
+$_ADMINLANG['status']['new'] = "新";
+$_ADMINLANG['status']['deprecated'] = "已过时";
 
 # Permissions
 $_ADMINLANG['permissions']['accessdenied'] = "权限不足";
@@ -2668,12 +2714,15 @@ $_ADMINLANG['transactions']['duplicateTransaction'] = "交易编号已存在";
 $_ADMINLANG['transactions']['forceDuplicateTransaction'] = "输入的交易编号已存在。这可能表示交易已重复。<br/>您确定要继续吗？";
 $_ADMINLANG['transactions']['amountInAndOutSpecified'] = "您指定了入帐和出帐。您只能指定这些值之一。";
 $_ADMINLANG['transactions']['information']['transactionId'] = "交易ID";
+$_ADMINLANG['transactions']['information']['relatedTransaction'] = "关联交易";
 $_ADMINLANG['transactions']['information']['amount'] = "数量";
+$_ADMINLANG['transactions']['information']['merchant_amount'] = "商户金额";
 $_ADMINLANG['transactions']['information']['type'] = "交易类型";
 $_ADMINLANG['transactions']['information']['currency'] = "交易货币";
 $_ADMINLANG['transactions']['information']['description'] = "描述";
 $_ADMINLANG['transactions']['information']['fee'] = "交易费用";
 $_ADMINLANG['transactions']['information']['status'] = "状态";
+$_ADMINLANG['transactions']['information']['extendedStatus'] = "附加状态";
 $_ADMINLANG['transactions']['information']['created'] = "创建日期";
 $_ADMINLANG['transactions']['information']['availableOn'] = "可用日期";
 $_ADMINLANG['transactions']['information']['originalAmount'] = "原始金额";
@@ -2685,6 +2734,10 @@ $_ADMINLANG['transactions']['information']['receiptUrl'] = "客户收据";
 $_ADMINLANG['transactions']['information']['title'] = "交易信息";
 $_ADMINLANG['transactions']['information']['tooltip'] = "查看交易详情。";
 $_ADMINLANG['transactions']['information']['gateway'] = "支付网关";
+$_ADMINLANG['transactions']['information']['paymentInstrument'] = "支付工具";
+$_ADMINLANG['transactions']['information']['gatewayOrder'] = "网关订购";
+$_ADMINLANG['transactions']['information']['gatewayNetworkReference'] = "网关网络相关";
+$_ADMINLANG['transactions']['information']['disbursementMode'] = "支付方式";
 $_ADMINLANG['transactions']['information']['disputed'] = "交易有争议";
 $_ADMINLANG['transactions']['information']['disputeReason'] = "争议原因";
 $_ADMINLANG['transactions']['information']['disputeStatus'] = "争议状态";
@@ -2863,6 +2916,8 @@ $_ADMINLANG['products']['marketConnectManageRedirectBtn'] = "立即前往";
 $_ADMINLANG['products']['productGroupRequired'] = "需要创建产品组";
 $_ADMINLANG['products']['productGroupRequiredDescription'] = "在创建首个产品之前，必须先创建一个产品组。您可以使用下面的表单创建一个产品组。";
 $_ADMINLANG['products']['prorataDisabled'] = "由于选择了一次性计费周期，因此已自动禁用Prorata计费。";
+$_ADMINLANG['products']['productGroupRequiredDescription'] = "在创建第一个产品之前，必须先创建产品组。您可以使用下面的表单创建产品组。";
+$_ADMINLANG['products']['prorataDisabled'] = "由于选择了一次性计费周期，按比例计费已被自动禁用.";
 $_ADMINLANG['products']['slugURL'] = "URL";
 $_ADMINLANG['products']['slugValidate'] = "正在验证...";
 $_ADMINLANG['products']['slugInUse'] = "此网址已被使用。";
@@ -3063,6 +3118,10 @@ $_ADMINLANG['automation']['moduleLogPruning'] = "模块日志裁剪";
 $_ADMINLANG['automation']['moduleLogPruningOlderThan'] = "裁剪早于以下时间的记录";
 $_ADMINLANG['automation']['freeDomainReminders'] = "免费域名提醒";
 $_ADMINLANG['automation']['freeDomainRemindersDescription'] = "勾选此框以发送免费域名的提醒。";
+$_ADMINLANG['automation']['invoiceAutoCancellation'] = "开启自动取消";
+$_ADMINLANG['automation']['invoiceAutoCancellationInfo'] = "选中以启用自动取消逾期未付发票。取消这些发票不会明确触发其他操作。但是，由于取消的发票，可能会发生其他自动化，具体取决于您的自动化设置.";
+$_ADMINLANG['automation']['invoiceAutoCancellationDaysDue'] = "天后逾期";
+$_ADMINLANG['automation']['invoiceAutoCancellationDaysDueInfo'] = "输入发票到期日后的天数。在这些天数之后，将发生自动取消，并且适用的逾期未付发票的状态将更改为已取消。";
 
 # Payment Gateways
 $_ADMINLANG['gateways']['intro'] = "这是您提供给客户的付款方式/网关接口配置。如果此处未列出您要使用的网关，那么您可以为 WHMCS 建立您自己的模块 - 您可以参考文档@";
@@ -4680,6 +4739,7 @@ $_ADMINLANG['healthCheck']['errorDisplayFailure'] = "您的系统当前已设置
 $_ADMINLANG['healthCheck']['errorLevels'] = "PHP 错误级别";
 $_ADMINLANG['healthCheck']['errorLevelsSuccess'] = "您的系统已设置为不记录不必要的错误级别。";
 $_ADMINLANG['healthCheck']['errorLevelsFailure'] = "您的系统已设置为记录不必要的错误级别。错误级别报告记录 E_NOTICE 和 E_WARNING 会影响某些操作并且带来安全风险。了解更多信息请参阅我们的 <a :href>文档</a>。";
+$_ADMINLANG['healthCheck']['errorLevelsFailure'] = "Your system is setup to log unnecessary error levels. Error level reporting that logs E_NOTICE and E_WARNING can interfere with some operations and is a security risk. For more information please refer to our <a :href>documentation</a>.";
 
 $_ADMINLANG['healthCheck']['curlSslSupport'] = "SSL 支持 cURL";
 $_ADMINLANG['healthCheck']['curlSslSupportSuccess'] = "cURL 支持 SSL。";
@@ -4742,6 +4802,15 @@ $_ADMINLANG['healthCheck']['legacySmartyTags']['body']['tagsOnly'] = "系统检�
 $_ADMINLANG['healthCheck']['legacySmartyTags']['body']['settingOnly'] = "系统检测到允许 Smarty PHP 标签设置已启用。:anchorSettings单击此处:anchorClose 转到常规设置以禁用 允许 Smarty PHP 标签设置。有关更正此问题的步骤，请参阅 :anchorDocsour 文档。:anchorClose";
 $_ADMINLANG['healthCheck']['legacySmartyTags']['body']['tagsAndSetting'] = "系统检测到旧版 Smarty 标签可能正在使用中，并且允许 Smarty PHP 标签设置已启用。:anchorReportClick here: anchorClose 查看包含旧标记的文件和模板。:anchorSettings单击此处:anchorClose 转到常规设置以禁用允许 Smarty PHP 标记设置。有关更正此问题的步骤，请参阅 :anchorDocsour 文档。:anchorClose";
 
+$_ADMINLANG['healthCheck']['checkSystemUrlIsSet']['title'] = '系统 URL 检查';
+$_ADMINLANG['healthCheck']['checkSystemUrlIsSet']['pass'] = '<p>您已成功配置 WHMCS 安装的系统 URL。</p>';
+$_ADMINLANG['healthCheck']['checkSystemUrlIsSet']['fail'] = '<p>您尚未为 WHMCS 安装配置系统 URL。 立即前往 :anchor 打开设置 :anchorClose 配置.</p><p>如果需要帮助点击 :anchorDocsdocumentation:anchorClose.</p>';
+
+$_ADMINLANG['healthCheck']['checkCloudflareProxy']['title'] = 'CloudFlare® 代理检查';
+$_ADMINLANG['healthCheck']['checkCloudflareProxy']['notDetected'] = 'WHMCS 未运行在CloudFlare代理模式下.';
+$_ADMINLANG['healthCheck']['checkCloudflareProxy']['pass'] = 'CloudFlare IP 地址已添加至可信代理中.';
+$_ADMINLANG['healthCheck']['checkCloudflareProxy']['fail'] = "WHMCS may be operating behind a proxy or CDN, but you have not configured trusted proxy settings using CloudFlare IP addresses. This may cause login sessions to end prematurely. <form class='inline' method='post' action=':url'><button class='btn-link-default'>Apply settings now</button></form> to correct this issue.";
+
 $_ADMINLANG['updater']['failure'] = "获取更新时发生致命错误。<br/>请检查以确保您的内存限制和执行时间设置为 <a href=\"https://docs.whmcs.com/Automatic_Updater#System_Requirements\" target=\"_blank\">推荐值</a>。";
 $_ADMINLANG['appLinks']['description'] = "应用链接允许您授予第三方应用程序访问 WHMCS 的用户账户。";
 $_ADMINLANG['appLinks']['description2'] = "已在下面列出所有支持应用链接的应用，可通过下面的开关简单的启用/禁用。启用应用链接将会在后台队列中创建初始的应用链接。请等待 30 分钟后才可以对所有产品/服务生效。";
@@ -4774,10 +4843,6 @@ $_ADMINLANG['openid']['clientSecret'] = "客户密钥";
 $_ADMINLANG['openid']['resetClientSecret'] = "重置客户密钥";
 $_ADMINLANG['openid']['creationDate'] = "创建日期";
 $_ADMINLANG['openid']['creationOnFirstSave'] = "客户 API 凭证将会在第一次保存时自动生成。";
-$_ADMINLANG['openid']['clientSecret'] = "客户密钥";
-$_ADMINLANG['openid']['resetClientSecret'] = "重置客户密钥";
-$_ADMINLANG['openid']['creationDate'] = "创建日期";
-$_ADMINLANG['openid']['creationOnFirstSave'] = "Client API Credentials will be generated upon first save.";
 $_ADMINLANG['openid']['logoUrl'] = "Logo URL";
 $_ADMINLANG['openid']['logoUrlMsg'] = "此应用 logo 图像的 URL 或相对路径基于 WHMCS 用户中心的目录";
 $_ADMINLANG['openid']['logoUrlEg'] = "例如：/path/to/logo.png";
@@ -6034,7 +6099,7 @@ $_ADMINLANG['searchOptions']['unverified'] ="未验证";
 $_ADMINLANG['searchOptions']['exempt'] ="豁免";
 $_ADMINLANG['searchOptions']['nonExempt'] ="非豁免";
 $_ADMINLANG['searchOptions']['reset'] = "重置";
-$_ADMINLANG['searchOptions']['userNameEmail'] = "User Name/Email Address";
+$_ADMINLANG['searchOptions']['userNameEmail'] = "用户名/邮箱";
 
 $_ADMINLANG['subscription']['info'] = "订阅信息";
 $_ADMINLANG['subscription']['active'] = "这是一个活动订阅";
@@ -6101,9 +6166,9 @@ $_ADMINLANG['paypalCommerce']['linkLiveAccount'] = "链接PayPal账户";
 $_ADMINLANG['paypalCommerce']['unlinkLiveAccount'] = "取消链接PayPal账户";
 $_ADMINLANG['paypalCommerce']['linkSandboxAccount'] = "链接PayPal测试账户";
 $_ADMINLANG['paypalCommerce']['unlinkSandboxAccount'] = "取消链接PayPal测试账户";
-$_ADMINLANG['paypalCommerce']['refreshMerchantStatus'] = "刷新商户状态";
 $_ADMINLANG['paypalCommerce']['messageAccountLimited'] = "[:environment] PayPal限制了您的帐户。检查您的PayPal帐户的电子邮件地址，以获取来自PayPal的消息，并了解开始接收付款的下一步步骤。";
 $_ADMINLANG['paypalCommerce']['messageVerifyEmail'] = "[:environment] 您的PayPal帐户的电子邮件地址未经确认。检查来自PayPal的电子邮件并确认您的电子邮件地址以开始接受付款。";
+$_ADMINLANG['paypalCommerce']['messageAccountNotVaultCapable'] = "[:environment] You cannot currently use automated recurring billing with this module. This may occur if PayPal does not support PayPal Vault for your merchant account's country. If you are in an <a href=\"http://go.whmcs.com/1797/PayPal-Merchant-Status\" target=\"_blank\">unsupported country or region</a>, we recommend using PayPal Checkout until PayPal Vault is available. If PayPal Vault is available in your country, contact PayPal for next steps.";
 $_ADMINLANG['paypalCommerce']['labelPaymentsReceivable'] = "应收款";
 $_ADMINLANG['paypalCommerce']['labelEmailVerified'] = "电子邮件已验证";
 $_ADMINLANG['paypalCommerce']['unlinkAccountMsg'] = "<p><strong>** :mode **</strong></p><p>If you proceed, WHMCS will stop capturing payment using vaulted pay methods that customers stored while this account link was active.</p><p>Are you sure that you want to continue?</p><p><strong>Warning:</strong> This action is irreversible and you cannot undo it.</p>";
@@ -6111,16 +6176,17 @@ $_ADMINLANG['paypalCommerce']['unlinkErrorGeneral'] = "取消链接您的PayPal�
 $_ADMINLANG['paypalCommerce']['sslRequired'] = "<strong>PayPal要求API请求使用HTTPS安全连接。</strong> 您当前的 <a :configGeneral>WHMCS System URL</a> 设置不是以 <i>https</i>开头，PayPal将拒绝它。<br> 若要链接PayPal，请将SSL证书添加到您安装WHMCS的域，并更新您的WHMCS系统的URL设置。 <a :learnMore>了解更多</a>";
 $_ADMINLANG['paypalCommerce']['deactivateUnavailableModuleAdvCards'] = "您必须先停用 :sibling 支付网关模块，然后才能停用此模块。";
 $_ADMINLANG['paypalCommerce']['visibleRequiredWhenModuleAdvCards'] = "PayPal® requires you to display the  payment gateway if you are displaying the :subordinate_module payment gateway.  'Show on Order Form' for the :action_module payment gateway first.";
-$_ADMINLANG['paypalCommerce']['capabilitiesDesc'] = "To use a PayPal feature, it must be available in your region and activated in your PayPal® account. Link a PayPal® :activeAccountLabel to view your available features. <a href=\"http://go.whmcs.com/1797/PayPal-Merchant-Status\" target=\"_blank\">了解更多</a>.";
-$_ADMINLANG['paypalCommerce']['capabilitiesLabel'] = "功能";
-$_ADMINLANG['paypalCommerce']['capabilityVaultDesc'] = "Vaulting 允许客户存储付款方式，以供自动结算在将来使用。.";
 $_ADMINLANG['paypalCommerce']['capabilityVaultLabel'] = "Vault";
-$_ADMINLANG['paypalCommerce']['capabilityCardsDesc'] = "此功能允许您接受信用卡和借记卡。您必须激活此功能，然后才能为此支付网关启用 \"在订单上显示\" ";
 $_ADMINLANG['paypalCommerce']['capabilityCardsLabel'] = "Advanced Cards";
 $_ADMINLANG['paypalCommerce']['credentialsRequiredWhenVisible'] = "您必须关联 PayPal®账户 然后才能为此支付网关启用 \"在订单上显示\" .";
+$_ADMINLANG['paypalCommerce']['refreshAccountNotice'] = "If your account has changed since you activated the module, you can check your account's status by clicking <strong>Refresh PayPal Account</strong>.";
+$_ADMINLANG['paypalCommerce']['refreshAccountLabel'] = "Refresh PayPal Account";
+$_ADMINLANG['paypalCommerce']['gettingStartedLinkAccount'] = "To get started, link your live PayPal merchant account or a Sandbox account. We enable <strong>Test Mode</strong> by default. Make sure to uncheck <strong>Test Mode</strong> to start accepting payments.";
+$_ADMINLANG['paypalCommerce']['addNotSupported'] = "You cannot add a payment method for this payment gateway through the Admin Area.";
 
 $_ADMINLANG['paypalCommerceAdvCards']['infoSharedSettings'] = "此支付网关模块使用来自的PayPal®帐户配置  :module 模块. 如果需要配置请更新 :module 模块.";
 $_ADMINLANG['paypalCommerceAdvCards']['missingCapability'] = "您必须激活 \"Advanced Cards\" 功能，然后才能为此支付网关启用 \"在订单上显示\" .";
+$_ADMINLANG['paypalCommerceAdvCards']['gettingStartedCards'] = "PayPal Card Payments works with the PayPal Payments module, providing a separate unbranded option to securely process credit and debit cards on your website. Activating PayPal Payments also activates PayPal Card Payments with no additional PayPal account configuration needed. Check <strong>Show on Order Form</strong> for PayPal Card Payments to add this option for credit and debit cards.";
 
 $_ADMINLANG['emailPreferences']['affiliate'] = "联盟电子邮件——接收联盟通知";
 $_ADMINLANG['emailPreferences']['domain'] = "域名电子邮件 - 注册/转让确认与续费通知";
@@ -6145,7 +6211,7 @@ $_ADMINLANG['legacySmartyTagsWarning']['description']['settingOnly'] = "系统�
 $_ADMINLANG['legacySmartyTagsWarning']['description']['tagsAndSetting'] = "系统检测到旧版 Smarty 标签可能正在使用中，并且允许 Smarty PHP 标签设置已启用。:anchorOpen在此处了解更多。:anchorClose";
 $_ADMINLANG['globalWarning']['2CheckoutInline']['title'] = "2Checkout Legacy Inline";
 $_ADMINLANG['globalWarning']['2CheckoutInline']['description'] = "2Checkout 已经弃用了他们的传统内联结账方式，现在向客户展示他们的标准体验。我们计划很快删除结账方式选项。";
-$_ADMINLANG['globalWarning']['systemUrlIsSet']['title'] = "Missing System URL";
+$_ADMINLANG['globalWarning']['systemUrlIsSet']['title'] = "系统URL未设置";
 $_ADMINLANG['globalWarning']['systemUrlIsSet']['description'] = "You have not configured the System URL for your WHMCS installation. Go to :anchorOpenGeneral Settings:anchorClose to configure it now.";
 
 $_ADMINLANG['twoFactor']['duosecurity']['friendlyName'] = "双重安全";
@@ -6239,9 +6305,9 @@ $_ADMINLANG['mail']['sparkPost']['apiKey'] = "SparkPost API Key";
 $_ADMINLANG['mail']['sparkPost']['sink'] = "使用接收器测试";
 $_ADMINLANG['mail']['sparkPost']['sinkInfo'] = "接收测试可让您通过SparkPost发送消息以进行集成测试，而无需实际尝试进行传递。";
 $_ADMINLANG['mail']['sendGrid']['apiKey'] = "SendGrid API Key";
-$_ADMINLANG['mail']['mailgun']['accountType'] = "Mailgun Region";
-$_ADMINLANG['mail']['mailgun']['EU'] = "EU Region";
-$_ADMINLANG['mail']['mailgun']['nonEU'] = "US Region";
+$_ADMINLANG['mail']['mailgun']['accountType'] = "Mailgun区域";
+$_ADMINLANG['mail']['mailgun']['EU'] = "EU欧洲区域";
+$_ADMINLANG['mail']['mailgun']['nonEU'] = "US美国区域";
 $_ADMINLANG['mail']['mailgun']['apiKey'] = "Mailgun Private API Key";
 $_ADMINLANG['mail']['mailgun']['sendingDomain'] = "发送域名";
 $_ADMINLANG['mail']['error']['systemUrlMissing'] = "请在配置 > 系统设置 > 常规设置中配置系统 URL。某些邮件提供商配置选项需要此设置。";
@@ -6561,3 +6627,5 @@ $_ADMINLANG['idna']['unknownError'] = "发生未知错误。";
 
 $_ADMINLANG['modules']['servers']['notActiveLabel'] = ":moduleName 模块未激活";
 $_ADMINLANG['modules']['servers']['notActive'] = "<p>This service relies on the :moduleName which is not activated.  Activate this module to utilize the server settings.</p>";
+
+$_ADMINLANG['cloudflare']['fetchError'] = '系统无非从CloudFlare抓取IP地址.';
