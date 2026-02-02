@@ -1,1 +1,5 @@
 .idea/
+.tools/
+.src/
+.gitignore
+.gitattributes
